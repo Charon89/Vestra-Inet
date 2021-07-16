@@ -8,7 +8,14 @@ $(function () {
     });
     $('.home-services-item').on('mouseleave', function () {
         $(this).toggleClass('accent').css({ margin: '0' });
-        $('.home-services-item').eq(1).addClass('accent');
+
+        setTimeout(() => {
+            if (!$('.home-services-item').hasClass('accent')) {
+                $('.home-services-item').eq(1).addClass('accent');
+            }
+        }, 2000);
+
+      
     });
 
     // Services page
@@ -18,7 +25,12 @@ $(function () {
     });
     $('.services-item').on('mouseleave', function () {
         $(this).toggleClass('accent');
-        $('.services-item').eq(1).addClass('accent');
+        setTimeout(() => {
+            if (!$('.services-item').hasClass("accent")) {
+                $('.services-item').eq(1).addClass('accent');
+            };
+        },2000)
+        
     });
 
     // Google review hover handlers

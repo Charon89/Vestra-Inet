@@ -1,6 +1,7 @@
 $(function () {
     if ($('.portfolio-cards').length) {
         $('.portfolio-cards').css('opacity', 1);
+        
 
         cards = $('.portfolio-cards');
 
@@ -11,13 +12,14 @@ $(function () {
 
         $.fn.inView = function () {
             var visibleArea = $(window).scrollTop() + $(window).height();
-            var objEndPos = $(this).offset().top + $(this).height() - 100;
+            var objEndPos = $(this).offset().top + $(this).height() - 200;
             return visibleArea >= objEndPos && $(window).scrollTop() <= objEndPos ? true : false;
         };
 
         var loopActive = true;
 
         setInterval(function () {
+            console.log("I")
             if (loopActive && $('.portfolio-cards').inView()) {
                 loopActive = false;
                 $.ajax({
@@ -34,9 +36,9 @@ $(function () {
                             var el = $(data.html);
                             cards.masonry().append(el).masonry('appended', el);
                             $('.ajax-loader').hide();
-                            setInterval(function () {
-                                cards.masonry();
-                            }, 100);
+                            // setInterval(function () {
+                            //     cards.masonry();
+                            // }, 100);
                             loopActive = true;
                         }
 
@@ -46,7 +48,7 @@ $(function () {
                     },
                 });
             }
-        }, 1000);
+        }, 500);
     }
 
     if ($('.photography-cards').length) {

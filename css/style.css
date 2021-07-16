@@ -28,8 +28,7 @@
     max-width: 90%;
     margin: 50px auto 0 auto;
 }
-.common-section {
-}
+
 .txt-header {
     max-width: 900px;
     margin: 0 auto 50px;
@@ -47,6 +46,13 @@
     font-size: 50px;
     line-height: 55px;
     font-weight: 500;
+}
+
+.aub-sep {
+    height: 1px;
+    width: 100%;
+    margin: 23px auto;
+    background: #a2a0a0;
 }
 
 .exp-link {
@@ -69,6 +75,7 @@
     min-height: 150px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .common-header-inner {
     width: 80%;
@@ -799,7 +806,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     text-align: center;
     height: 90%;
@@ -1085,11 +1092,12 @@
     padding: 40px 30px;
     margin: 15px;
     transition: 0.3s ease;
+    box-shadow: rgba(22, 31, 39, 0.42) 0px 40px 40px -25px, rgba(19, 26, 32, 0.05) 0px 25px 45px -35px;
 }
 .google-review-item.blur {
     /* filter: blur(4px); */
-    transform: perspective(40em) rotateX(50deg) scale(0.8);
-    box-shadow: rgba(22, 31, 39, 0.42) 0px 40px 40px -25px, rgba(19, 26, 32, 0.05) 0px 25px 45px -35px;
+    transform: rotate3d(0.2, 0.1, 0.1, 5deg) scale(0.95);
+    box-shadow: rgba(22, 31, 39, 0.42) 0px 5px 40px -25px, rgba(19, 26, 32, 0.05) 0px 25px 45px -35px;
 }
 .google-review-avatar {
     width: 70px;
@@ -2011,25 +2019,33 @@
 
 /* SERVICES PAGE */
 .services-grid {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(auto-fill, minmax(460px, 460px));
+    /* grid-template-columns: repeat(3, max-content); */
     gap: 15px;
     justify-content: center;
+    justify-items: center;
     margin-bottom: 50px;
 }
 .services-grid > .services-item {
+    max-width: unset;
     height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 .services-grid > .services-item h4 {
     margin-bottom: 30px;
 }
 .services-item-custom {
-    max-width: 460px;
+    width: 100%;
+    /* max-width: 460px; */
     background-color: #deeafa;
     border-radius: 15px;
     text-align: right;
     padding: 27px;
+    /* margin: 0 auto; */
 }
 .services-item-custom h3 {
     font-size: 28.4931px;
@@ -2044,6 +2060,22 @@
     width: max-content;
     font-size: 16px;
     margin: 15px auto;
+}
+.service-about {
+    background-image: url(/images/misc/about-us-pic.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 300px;
+    background-color: var(--bg-light);
+}
+.service-about .grid-2col {
+    max-width: 80%;
+    margin: 0px auto;
+}
+.service-about .grid-2col .grid-bl-2 {
+    margin-block: 100px;
+    max-width: 665px;
 }
 
 /* [MEDIAS] */
@@ -2175,6 +2207,19 @@
     .about-soft-development-box > div:last-of-type {
         display: none;
     }
+
+    /* [our-services] */
+    .service-about .grid-2col .grid-bl-2 {
+        background-color: rgba(255, 255, 255, 0.844);
+        backdrop-filter: blur(4px);
+        padding: 30px;
+        border-radius: 15px;
+        grid-column: 1/3;
+        max-width: unset;
+    }
+    .service-about .grid-2col .grid-bl-1 {
+        display: none;
+    }
 }
 @media (max-width: 1235px) {
     /* [home - services transform] */
@@ -2268,6 +2313,23 @@
     .h-portfolio-item h5 {
         margin-top: 0.5em;
         margin-bottom: 1em;
+    }
+
+    /* [our-services] */
+    .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    .services-item-custom .exp-link {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1055px) {
+    /* [our-services] */
+    .service-about {
+        background-size: cover;
     }
 }
 
@@ -2420,6 +2482,61 @@
     .about-we-specialize .grid-2fr-1fr > div:last-of-type p {
         display: none;
     }
+
+    /* [our-services] */
+    .services-item-custom {
+        display: none;
+    }
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .services-grid > .services-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+        height: 100px;
+        order: 2;
+    }
+    .services-grid > :nth-child(2) {
+        order: 1;
+    }
+    .services-grid > .services-item > div:not(.services-item-icon) {
+        text-align: left;
+        flex: 1;
+    }
+    .services-grid > .services-item p {
+        display: none;
+    }
+    .services-grid > .services-item h4 {
+        text-align: left;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 15px;
+    }
+    .services-item::after {
+        content: unset;
+    }
+    .services-grid .services-item-icon {
+        width: 80px;
+        height: 80px;
+        min-width: unset;
+        border-radius: 50%;
+        margin: 15px;
+    }
+    .services-item-icon img {
+        display: block;
+        width: 50px;
+        object-fit: scale-down;
+    }
+    .services-item .btn-sml {
+        height: 100%;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .services-item .btn-sml span {
+        display: none;
+    }
 }
 
 @media (max-width: 750px) {
@@ -2456,6 +2573,18 @@
 }
 
 @media (max-width: 680px) {
+    .common-header{
+        min-height: 115px;
+    }
+    .common-header .bread-links *{
+        font-size: 12px;
+    }
+    .common-header h1{
+        margin-top: 7px;
+        font-size: 25px;
+    }
+
+
     /* [home - video section transform] */
     .video-block {
         min-height: 50vh;
@@ -2578,6 +2707,20 @@
     .about-soft-development-grid {
         grid-template-columns: 1fr;
     }
+
+    .our-services .txt-header{
+        margin: 0 auto 0px;
+        text-align: left;
+        color: var(--accent-dark);
+    }
+    .our-services .txt-header h5 {
+        display: none;
+    }
+    .our-services .txt-header h2 {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 25px;
+    }
 }
 @media (max-width: 600px) {
     /* [about - we specialize] */
@@ -2595,6 +2738,11 @@
     }
     .mk-bl p {
         font-size: 14px;
+    }
+
+    /* [our-services] */
+    .service-about {
+        display: none;
     }
 }
 

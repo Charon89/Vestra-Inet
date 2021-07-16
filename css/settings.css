@@ -11,6 +11,7 @@
     --accent-dark: #172e4d;
 
     --bg-light: #f3f6fb;
+    --bg-d-light: #DEEAFA;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -190,6 +191,9 @@ input.error{
 .bg-light {
     background-color: var(--bg-light);
 }
+.bg-d-light {
+    background-color: var(--bg-d-light);
+}
 
 /* [text align] */
 .text-left {
@@ -311,3 +315,45 @@ input.error{
     left: 5px;
 }
 /* PRIMARY BTNS END */
+
+.secondary-button {
+    display: inline-block;
+    position: relative;
+    letter-spacing: 2.5px;
+    border-bottom: 1px dashed #000;
+    margin: 20px 0em;
+    margin-right: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    cursor: pointer;
+    padding-right: 55px;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-weight: 600;
+}
+.secondary-button::after {
+    content: '';
+    display: block;
+    height: 17px;
+    width: 33px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-image: url(/images/icons/secondary-button-arrow-b.png);
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    left: calc(100% - 35px);
+}
+.secondary-button:hover {
+    padding-right: 0px;
+    padding-left: 65px;
+}
+.secondary-button:hover::after {
+    right: 85%;
+    left: 5px;
+}
