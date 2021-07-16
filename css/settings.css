@@ -246,6 +246,7 @@ input.error{
     transition: all 0.4s ease-in-out;
     animation: bounce 3s ease-in-out forwards;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 @keyframes bounce {
     0% {
@@ -305,6 +306,9 @@ input.error{
 
 .primary-button.inquire::after {
     background-image: url(/images/icons/icon-button-inquire.png);
+}
+.primary-button.gallery::after {
+    background-image: url(/images/icons/icon-gallery.png);
 }
 .primary-button:hover {
     padding: 0 20px 0 65px;
