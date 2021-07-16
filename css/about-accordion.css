@@ -1,0 +1,162 @@
+.accordion {
+    width: 100%;
+    /* max-width: 1080px; */
+    max-width: 80%;
+    height: 550px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(0, 0, 0);
+    background-blend-mode: luminosity;
+    transition: all 500ms ease;
+    opacity: 1;
+    background-size: cover;
+}
+.accordion ul li.active{
+    background-blend-mode: normal;
+    opacity: 1;
+}
+.accordion ul li .accordion-title{
+    transform: rotate(-90deg);
+    width: 100%;
+    font-size: 30px;
+    opacity: 1;
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 5px rgba(0, 0, 0, 0.282);
+}
+.accordion ul li.active .accordion-title{
+    opacity: 0;
+}
+
+.accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion ul li div a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    /* text-overflow: ellipsis; */
+    position: relative;
+    z-index: 5;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    /* top: 160px; */
+}
+
+.accordion ul li div a p {
+    /* top: 160px; */
+    font-size: 13.5px;
+    line-height: 120%;
+}
+
+.accordion ul li:nth-child(1) {
+    background-image: url('/images/about-page/slides/0.jpg');
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url('/images/about-page/slides/1.jpg');
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url('/images/about-page/slides/2.jpg');
+}
+
+.accordion ul li:nth-child(4) {
+    background-image: url('/images/about-page/slides/3.jpg');
+}
+
+.accordion ul li:nth-child(5) {
+    background-image: url('/images/about-page/slides/4.jpg');
+}
+
+.accordion ul li:nth-child(6) {
+    background-image: url('/images/about-page/slides/5.jpg');
+}
+
+.accordion ul:hover li {
+    width: 8%;
+}
+
+.accordion ul:hover li:hover {
+    width: 60%;
+}
+
+.accordion ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+    .accordion {
+        height: auto;
+    }
+
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }
+}

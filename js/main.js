@@ -1,0 +1,159 @@
+$(function () {
+    $('.video-block').css({ paddingTop: $('.header').outerHeight() });
+
+    $('.home-services-item').on('mouseenter', function () {
+        $('.home-services-item').removeClass('accent');
+        $(this).toggleClass('accent').css({ margin: '0 15px' });
+    });
+    $('.home-services-item').on('mouseleave', function () {
+        $(this).toggleClass('accent').css({ margin: '0' });
+        $('.home-services-item').eq(1).addClass('accent');
+    });
+
+    // Google review hover handlers
+    $('.google-review-item').hover(
+        function (e) {
+            $('.google-review-item').not(this).addClass('blur');
+        },
+        function (e) {
+            $('.google-review-item').not(this).removeClass('blur');
+        }
+    );
+
+    // Quote file upload handler
+    $('.quote-upload-in').on('change', function (e) {
+        if (this.files.length <= 0) {
+            $(this).prev().text('BROWSE').removeClass('active');
+            $('.remove-file').remove();
+        } else {
+            $(this)
+                .prev()
+                .html(this.files[0].name)
+                .addClass('active')
+                .parent()
+                .append(
+                    `<span class="remove-file" title="Remove file">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0991 3.21115C13.2338 3.08541 13.3425 2.93434 13.4189 2.76656C13.4954 2.59877 13.538 2.41757 13.5445 2.23329C13.5509 2.04901 13.521 1.86527 13.4565 1.69255C13.392 1.51982 13.2942 1.36151 13.1685 1.22664C13.0429 1.09177 12.8919 0.982994 12.7243 0.906511C12.5566 0.830029 12.3756 0.787342 12.1915 0.780888C12.0073 0.774435 11.8237 0.804342 11.6511 0.8689C11.4786 0.933458 11.3204 1.0314 11.1856 1.15715L7.08096 4.98717L3.25406 0.877756C2.99799 0.615276 2.64945 0.463524 2.28301 0.454972C1.91658 0.446419 1.56135 0.581746 1.29334 0.831994C1.02533 1.08224 0.865829 1.42753 0.848969 1.79398C0.83211 2.16043 0.95923 2.51893 1.20313 2.79277L5.03003 6.90079L0.923965 10.7308C0.784447 10.8553 0.671188 11.0064 0.590839 11.1753C0.51049 11.3442 0.464671 11.5274 0.456075 11.7143C0.447478 11.9011 0.476276 12.0878 0.540778 12.2634C0.605281 12.4389 0.704186 12.5998 0.831685 12.7366C0.959184 12.8734 1.11271 12.9833 1.28323 13.0598C1.45376 13.1364 1.63786 13.1781 1.82471 13.1824C2.01156 13.1868 2.19739 13.1537 2.3713 13.0852C2.54521 13.0167 2.70369 12.9141 2.83742 12.7834L6.94208 8.95479L10.769 13.0628C10.8925 13.205 11.0435 13.3209 11.2127 13.4035C11.382 13.4861 11.5661 13.5337 11.7542 13.5436C11.9422 13.5534 12.1303 13.5253 12.3073 13.4609C12.4842 13.3964 12.6464 13.297 12.7841 13.1684C12.9219 13.0399 13.0323 12.885 13.109 12.7128C13.1856 12.5407 13.2268 12.3548 13.2301 12.1664C13.2335 11.978 13.1989 11.7908 13.1284 11.6161C13.0579 11.4413 12.953 11.2825 12.8199 11.1492L8.99441 7.04118L13.0991 3.21115Z" fill="white"/>
+                            </svg>
+                        </span>`
+                );
+            $('.remove-file').on('click', function (e) {
+                $(this).parent().find('input').val('').trigger('change');
+                $(this).remove();
+            });
+        }
+    });
+    // Quote submit handler
+    $('.js-submit-inquire').on('click', function (e) {
+        e.preventDefault();
+    });
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 10) {
+            $('.header').addClass('minified');
+            $('.video-block').css({ paddingTop: $('.header').outerHeight() });
+        } else {
+            $('.header').removeClass('minified');
+            $('.video-block').css({ paddingTop: $('.header').outerHeight() });
+        }
+        if ($('.pm-sub-trigger').length > 0 && $(window).scrollTop() > 182) {
+            $('.pm-sub-trigger').addClass('minified');
+        } else {
+            $('.pm-sub-trigger').removeClass('minified');
+        }
+
+       
+        if ($('#port-filter').length)
+            if ($('#port-filter').offset().top == $(window).scrollTop() + $('.header').height()) {
+                $('#port-filter').addClass('is-pinned');
+            } else $('#port-filter').removeClass('is-pinned');
+    });
+
+    
+
+    let $menu = $('.responsive-menu-container');
+
+    $('#responsive-menu-trigger').on('click', function () {
+        $(this).toggleClass('open');
+        $menu.slideToggle();
+    });
+
+    $('.responsive-sub-menu-trigger').on('click', function (e) {
+        // e.preventDefault();
+        $(this).toggleClass('active-sub-menu');
+        $(this).find('.responsive-sub-menu').slideToggle(300);
+    });
+
+    $(window).resize(function () {
+        if ($(this).width() > 975) {
+            $menu.hide();
+        }
+    });
+
+    // Global effects initialization
+    AOS.init();
+
+    // Home page - team swiper
+    let teamSwiper = new Swiper('.teamSwiper', {
+        autoHeight: true,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        //  noSwiping: true,
+        //  noSwipingClass:"teamSwiper .swiper-slide",
+    });
+    let teamSwiperMobile = new Swiper('.teamSwiperMobile', {
+        autoHeight: true,
+        spaceBetween: 20,
+        loop: true,
+        freeMode: false,
+        autoplay: {
+            delay: 3000,
+        },
+        //  noSwiping: true,
+        //  noSwipingClass:"teamSwiper .swiper-slide",
+    });
+
+    // About page - accordion
+    $('.accordion li').hover(
+        function (e) {
+            $(this).addClass('active');
+        },
+        function (e) {
+            $(this).removeClass('active');
+        }
+    );
+
+    // About page go mobile section
+    var swiper = new Swiper('.goMobile-swiper', {
+        autoHeight: true,
+        loop: true,
+        spaceBetween: 100,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000,
+        },
+        effect: 'slide',
+        fadeEffect: {
+            crossFade: true,
+        },
+    });
+
+    // About page parallax effect
+    $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1 });
+
+    // About page gallery
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        stagger: 30,
+        gutter: 20,
+        stamp: '.stamp',
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer',
+        percentPosition: true,
+    });
+});
+

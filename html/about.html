@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+        <!-- SwiperJs -->
+        <link rel="stylesheet" href="/css/libs/swiperJs_7.6.5.css" />
+        <script src="/js/libs/swiperJs_7.6.5.js"></script>
+
+        <!-- parallax js -->
+        <script src="/js/libs/parallax.js" defer></script>
+
+        <!-- Masonry -->
+        <script src="/js/libs/masonry_4.2.2.js"></script>
+
+        <title>Vestrainet - About</title>
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div class="root">
+            <header class="header">
+                <a class="logo" href="/" title="Vestra Inet">
+                    <img src="/images/misc/logo.png" alt="Vestra Inet" />
+                </a>
+                <div class="header-block">
+                    <div id="responsive-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="responsive-menu-container">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li class="active"><a href="/html/about.html" title="About Us">About Us</a></li>
+                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="responsive-sub-menu-trigger">
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <ul class="responsive-sub-menu">
+                                <h6>Software Development</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>Website DeVeLOPMENT</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-web-design.html" title="Website Design">Website Design</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>OTHER</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-video-photography.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+
+                        <div class="call-us-today">
+                            <h6>CALL US TODAY!</h6>
+                            <a href="tel:9057618078">905.761.8078</a>
+                        </div>
+                    </ul>
+
+                    <ul class="top-menu">
+                        <li class="t-menu-item"><a class="t-link" href="/" title="Home">Home</a></li>
+                        <li class="t-menu-item active"><a class="t-link" href="/html/about.html" title="About Us">About Us</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="t-menu-item">
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio">Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="" /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <p>Software Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-type-of-system.html">TYpe of System</a></li>
+                                        <li><a href="/html/portfolio/portfolio-projects-list.html">Project List</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Website Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-web-design.html">Website design</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Other</p>
+                                    <ul>
+                                        <li><a href="/html/services/services-video-photography.html">Photo & Video</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        <li class="t-menu-item"><a class="inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="p-top70">
+                <!-- [about - head] -->
+                <header class="about-header">
+                    <div>
+                        <div class="breadcrumbs"><a href="https://vestrainet.com/">WWW.VESTRAINET.COM </a> > <a class="b600" href="/html/about.html"> ABOUT US</a></div>
+                        <h1>About Us</h1>
+                    </div>
+                </header>
+
+                <section class="about-about">
+                    <div class="txt-header">
+                        <h5>ABout Company</h5>
+                        <h2>About Company</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla
+                        ut morbi tincidunt augue interdum. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Quis hendrerit dolor magna eget est
+                        lorem ipsum. Ultrices vitae auctor eu augue ut lectus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Quam adipiscing vitae proin sagittis
+                        nisl rhoncus mattis. Ut faucibus pulvinar elementum integer enim neque. Habitant morbi tristique senectus et. Dictum varius duis at consectetur lorem donec
+                        massa sapien faucibus. Elit pellentesque habitant morbi tristique senectus.
+                    </p>
+                    <a class="mar-tb2 flex j-c" href="#">Learn more</a>
+                </section>
+
+                <section class="about-meet-the-team">
+                    <div class="accordion">
+                        <ul>
+                            <li class="active">
+                                <span class="accordion-title">OUR TEAM</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>OUR TEAM</h2>
+                                        <p>
+                                            STRIKING THE BALANCE BETWEEN PASSION AND PROFESSIONALISM If there is one thing we all know about the Internet, it is that it isn’t
+                                            linear. Our team is as diverse as it gets in Toronto. We don’t just have web developers; we have everything in between, from consultants
+                                            to technical support gurus. The team at Vestra is selected from a vast variety of skill sets, and work together to bring you solutions
+                                            that will blow your mind. Read on for a look at how our web development team composition works for you.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="accordion-title">CONSULTANTS</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>CONSULTANTS</h2>
+                                        <p>
+                                            YOUR GUIDES TO VESTRA INET One of our consultants will meet with you in person to get familiar with your company and discuss what we can
+                                            do for you. You will get an overview of our capabilities and how we can tailor our services of custom website design in Toronto
+                                            specifically for your company. You will also get an understanding of how Vestra Inet can increase your online presence, attract more
+                                            clientele, as well as facilitate your business operations and transactions with our customized content management system software.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="accordion-title">DESIGNERS</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>DESIGNERS</h2>
+                                        <p>
+                                            CRAFTING BEAUTIFUL SITES, ONE PAGE AT A TIME Once one of our consultants has met with you, we move onto the design phase. Working
+                                            alongside you to build a functional design that meets all your criteria, being an extension of your company’s brand. Our designers
+                                            tailor your website, right down to the small details. We work with you at every step to give you the website you want for your company.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="accordion-title">PROGRAMMERS & DEVELOPERS</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>PROGRAMMERS & DEVELOPERS</h2>
+                                        <p>
+                                            THE ENGINEERS OF THE DIGITAL AGE. We’ll get your design in motion. Our skilled web developers program responsive, eye-catching websites
+                                            that bring our designs to life. With scrolling images, dynamic web elements, and mobile friendly pages, your website will be an
+                                            enjoyable experience for all visiting clients.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="accordion-title">DATABASE DEVELOPERS</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>DATABASE DEVELOPERS</h2>
+                                        <p>
+                                            BOOSTING YOUR OPERATIONAL EFFICIENCY Beyond design we implement content management systems, ecommerce stores, and more… If you dream it,
+                                            we can build it. Your website is an integral part of your business. We’ll make sure it functions exactly as you envision it. Our
+                                            developers program websites that cater specifically to your company’s needs.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="accordion-title">SEO SPECIALISTS</span>
+                                <div>
+                                    <a href="#">
+                                        <h2>SEO SPECIALISTS</h2>
+                                        <p>
+                                            INCREASING YOUR ONLINE EXPOSURE EVERY DAY Internet marketing and promotion is integral to growing a business. We can help potential
+                                            clients find you by implementing SEO strategies that are up to date with all Google standards. Our SEO specialists will help you
+                                            increase your search engine visibility, and put your website ahead of the competition.
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="about-what-we-do">
+                    <div class="txt-header">
+                        <h5>LET US CRAFT YOUR ULTIMATE EXPERIENCE</h5>
+                        <h2>What We Do</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit volutpat maecenas
+                        volutpat blandit aliquam etiam erat. Tincidunt lobortis feugiat vivamus at augue eget. Viverra aliquet eget sit amet tellus cras adipiscing. Sed arcu non
+                        odio euismod lacinia. Odio ut enim blandit volutpat. Purus sit amet volutpat consequat mauris nunc congue. Massa massa ultricies mi quis. Elementum eu
+                        facilisis sed odio morbi quis. Tincidunt eget nullam non nisi est sit.
+                    </p>
+                </section>
+
+                <section class="about-business-solutions" data-aos="fade-in">
+                    <h2 class="">Custom Business Solutions</h2>
+                    <p>Powerful New Custom Business Solutions for Your Company</p>
+                    <div class="grid-2col">
+                        <div>
+                            As a business owner, you know just how important a fully-fledged business solution is. Vestra Inet has the tools and the capability to build a powerful
+                            custom business software solution that can address all the issues in your company. Watch as your company’s internal communications, processes, and sales
+                            improve exponentially over time. Our software forms the perfect combination of CRM, ERP, and unique features that are tailor-made for you.
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="/html/services/services-software-development.html"> <span class="font-ra font-accent">Custom &nbsp;</span> Software Development</a>
+                                </li>
+                                <li><a href="/html/services/services-web-design.html"> Website Design </a></li>
+                                <li><a href="/html//services/services-internet-marketing-promotion.html"> Internet Marketing & Promotion </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-soft-development">
+                    <div class="txt-header">
+                        <h5>LET US CRAFT YOUR ULTIMATE EXPERIENCE</h5>
+                        <h2>Powerful Custom Software Development</h2>
+                    </div>
+
+                    <div class="about-soft-development-box">
+                        <div class="about-soft-development-grid">
+                            <img src="/images/about-page/rand-image.png" alt="rand-image.png" data-aos="fade-right" />
+                            <div class="about-soft-development-grid-item" data-aos="fade-up">
+                                <div class="about-soft-development-grid-item-title manage">Production Management</div>
+                                <ul>
+                                    <li>Centralized production control</li>
+                                    <li>Complete automation of multiple stages</li>
+                                    <li>Automated process scheduling</li>
+                                    <a href="#">Learn more <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></a>
+                                </ul>
+                            </div>
+                            <div class="about-soft-development-grid-item" data-aos="fade-up">
+                                <div class="about-soft-development-grid-item-title config">Product Configurator</div>
+                                <ul>
+                                    <li>Real-time visual updates</li>
+                                    <li>Custom compatibility filters</li>
+                                    <li>Automatic SKU generation</li>
+                                    <a href="#">Learn more <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></a>
+                                </ul>
+                            </div>
+
+                            <div class="about-soft-development-grid-item" data-aos="fade-up">
+                                <div class="about-soft-development-grid-item-title config">Custom ERP</div>
+                                <ul>
+                                    <li>Custom designed to meet your unique business needs</li>
+                                    <li>Increase work-flow and operational efficiency</li>
+                                    <li>Cloud-based software solution</li>
+                                    <a href="#">Learn more <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></a>
+                                </ul>
+                            </div>
+
+                            <div class="about-soft-development-grid-item" data-aos="fade-up">
+                                <div class="about-soft-development-grid-item-title manage">Production Management</div>
+                                <ul>
+                                    <li>Centralized production control</li>
+                                    <li>Complete automation of multiple stages</li>
+                                    <li>Automated process scheduling</li>
+                                    <a href="#">Learn more <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></a>
+                                </ul>
+                            </div>
+                            <div class="about-soft-development-grid-item" data-aos="fade-up">
+                                <div class="about-soft-development-grid-item-title online">Online Ordering System</div>
+                                <ul>
+                                    <li>Centralized production control</li>
+                                    <li>Complete automation of multiple stages</li>
+                                    <li>Automated process scheduling</li>
+                                    <a href="#">Learn more <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="primary-button accent consult" data-fancybox="" href="#quote-popup" title="Consultation">Shedule a Consultation</a>
+                            <p class="mar-tb1 b600">
+                                Vestra Inet has the tools and the capability to build a powerful custom business software solution that can address all the issues in your company:
+                            </p>
+                            <ul>
+                                <li>Product navigation and search engine</li>
+                                <li>Database connectivity and system mapping</li>
+                                <li>Order querying and transaction processing</li>
+                                <li>Accounting systems</li>
+                                <li>Inventory management</li>
+                                <li>Production life cycle tracking</li>
+                                <li>Client login and management</li>
+                                <li>Calendars and online booking</li>
+                                <li>Digital document databases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-we-specialize" id="st-1" data-parallaxify-range-x="100" data-parallaxify-range-y="50">
+                    <div class="txt-header">
+                        <h5>DYNAMIC CUSTOM WEB DESIGN</h5>
+                        <h2 class="font-white">We specialize in Commercial & Industrial Web Design and Business Solutions.</h2>
+                    </div>
+                    <div class="grid-2fr-1fr">
+                        <div><img src="/images/about-page/website-design 1.png" alt="website-design 1.png" /></div>
+                        <div>
+                            <p>
+                                As a business owner, you know just how important a fully-fledged business solution is. Vestra Inet has the tools and the capability to build a
+                                powerful custom business software solution that can address all the issues in your company. Watch as your company’s internal communications,
+                                processes, and sales improve exponentially over time. Our software forms the perfect combination of CRM, ERP, and unique features that are
+                                tailor-made for you.
+                            </p>
+
+                            <a class="accent-link mar-t2" href="/html/portfolio/portfolio-projects-list.html"
+                                >Check out Our Portfolio <img src="/images/icons/arrow-right-yellow.png" alt="arrow-right-yellow.png"
+                            /></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-go-mobile">
+                    <div class="grid-2col">
+                        <div>
+                            <h5 class="font-light-blue">MOBILE WEBSITES AND APPLICATIONS</h5>
+                            <h3 class="font-accent-dark">Lets Go Mobile!</h3>
+                            <p>
+                                We live in a world where everything is portable. Making your website available to your clients when they’re on the go could be the difference
+                                between success and failure for your brand. Here at Vestra Inet, we create responsive custom web design so that your clients will be able to access
+                                your site from any of their devices, including mobile phones and tablets. With over half the region searching primarily on mobile devices, our
+                                approach to your custom web design in Toronto will boost your traffic and turnover exponentially.
+                            </p>
+                            <h5 class="font-accent-dark mar-t2">Benefits of Custom Web Design from Our Toronto Office</h5>
+                            <div class="about-go-mobile-benefits">
+                                <div><img src="/images/icons/checkmark-yellow.svg" alt="checkmark-yellow.svg" />Informative Mobile Features</div>
+                                <div><img src="/images/icons/checkmark-yellow.svg" alt="checkmark-yellow.svg" />Adaptive Site Layouts</div>
+                                <div><img src="/images/icons/checkmark-yellow.svg" alt="checkmark-yellow.svg" />Accessible Websites</div>
+                                <div><img src="/images/icons/checkmark-yellow.svg" alt="checkmark-yellow.svg" />Cross Platform Functionality</div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left">
+                            <h3 class="about-go-mobile-mob-title">Lets Go Mobile!</h3>
+                            <div class="swiper-container goMobile-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/images/about-page/goMobile/img-slider-bg-1.jpg" class="sl-bg" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/iPhone.png" class="mobile-ph" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/product-ifc.png" class="product-ph" alt="Vestra Inet" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/about-page/goMobile/img-slider-bg-2.jpg" class="sl-bg" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/GALAXY-S10.png" class="mobile-ph" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/rings.png" class="product-ph" alt="Vestra Inet" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/about-page/goMobile/img-slider-bg-3.jpg" class="sl-bg" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/oneplus.png" class="mobile-ph" alt="Vestra Inet" />
+                                        <img src="/images/about-page/goMobile/construction-jug.png" class="product-ph" alt="Vestra Inet" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-marketing">
+                    <div class="txt-header">
+                        <h5>Who we are</h5>
+                        <h2 class="font-white">Internet Marketing & Promotion</h2>
+                        <p>
+                            When you need a solution to a problem, where do you turn to first? The internet. Your clients do the same thing, which is why your website must reflect
+                            your brand. A website is the identity of a company, and it must convey the personality of the business to the clients. Our high-performance team
+                            provides custom software development for businesses in Toronto and the GTA. We ensure that your website features gorgeous and user-friendly software
+                            that establish the backbone of any great company.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="mk-body">
+                                <div class="text-paragraph">
+                                    <h5>Custom SEO & Web Marketing</h5>
+                                    <h3>Potent <span>Marketing</span> and Promotional <span>Tools</span></h3>
+                                    <p>
+                                        We deliver highly effective internet marketing solutions so your website gains the exposure it needs. Our Toronto web development team
+                                        utilizes a variety of skills to optimize your website so it is given top priority on search engines and social media. The strategies we use
+                                        are highly complex and grant your site the visibility you need it to have for success.
+                                    </p>
+                                    <a class="primary-button consult" href="#quote-popup" title="Consultation">Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk-l img-block">
+                            <div>
+                                <h1>G TAG</h1>
+                                <div class="mk-bl" >
+                                    <h3>218%</h3>
+                                    <p>Increase Ranking Keyword After One Month of Compaign</p>
+                                    <img src="/images/about-page/marketing-block/marketing-ranking-keyword.jpg" alt="Increase Ranking Keyword In One Month" />
+                                    <a class="third-button" href="#" title="Learn more">Learn more</a>
+                                </div>
+                            </div>
+
+                            <div class="mk-bl" >
+                                <h3>Click Increase</h3>
+                                <img src="/images/about-page/marketing-block/marketing-click-increase.jpg" alt="Increase Ranking Keyword In One Month" />
+                                <p>In next few month after launching SEO Compaign</p>
+                            </div>
+                            <div class="mk-bl" >
+                                <h3><span>Boost</span> In Sales</h3>
+                                <img src="/images/about-page/marketing-block/marketing-increase-revenue-diagram.jpg" alt="Increase Ranking Keyword In One Month" />
+                                <p>Increasing Company Revenue After Starting Seo Compaign</p>
+                                <!-- <a class="third-button" href="#" title="Learn more">Learn more</a> -->
+                            </div>
+
+                            <div>
+                                <div class="mk-bl" >
+                                    <h3>Quotes Number Increase</h3>
+                                    <img src="/images/about-page/marketing-block/marketing-quotes-icrease.jpg" class="qts-img" alt="Increase Ranking Keyword In One Month" />
+                                    <span class="font-pink font-bold">+96%</span>
+                                    <p>Our Customers Starts Getting More Quote Request</p>
+                                </div>
+                                <div class="g-partnersbadge desctop" data-agency-id="3011509700"></div>
+                                <div class="f-parnersbadge desctop">
+                                    <a href="https://www.facebook.com/vestrainet/?ref=br_rs"
+                                        ><img src="/images/about-page/marketing-block/facebook-partners.png" alt="facebook-partners"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-gallery">
+                    <!-- <div class="about-gallery-inner">
+                        <div class="gallery-heading">
+                                <h2>#Vestra<span>Inet</span></h2>
+                                <p>Let our team show you what our business solutions can do</p>
+                            </div>
+                    </div> -->
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+
+                        <div class="stamp gallery-heading">
+                            <h2>#Vestra<span>Inet</span></h2>
+                            <p>Let our team show you what our business solutions can do</p>
+                        </div>
+
+                        <a href="/images/about-page/gallery/img-gallery-1.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height473">
+                            <img src="/images/about-page/gallery/img-gallery-1.jpg" />
+                        </a>
+                        <a href="/images/about-page/gallery/img-gallery-2.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height225">
+                            <img src="/images/about-page/gallery/img-gallery-2.jpg" />
+                        </a>
+                        <a href="/images/about-page/gallery/img-gallery-3.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height273">
+                            <img src="/images/about-page/gallery/img-gallery-3.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-4.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height273">
+                            <img src="/images/about-page/gallery/img-gallery-4.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-5.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height225"
+                            ><img src="/images/about-page/gallery/img-gallery-5.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-6.jpg" data-fancybox="about-gallery" class="grid-item">
+                            <img src="/images/about-page/gallery/img-gallery-6.jpg"
+                        /></a>
+
+                        <a href="/images/about-page/gallery/img-gallery-8.jpg" data-fancybox="about-gallery" class="grid-item grid-item--widtht2 grid-item--height493">
+                            <img src="/images/about-page/gallery/img-gallery-8.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-9.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height493">
+                            <img src="/images/about-page/gallery/img-gallery-9.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-10.jpg" data-fancybox="about-gallery" class="grid-item grid-item--height493">
+                            <img src="/images/about-page/gallery/img-gallery-10.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-11.jpg" data-fancybox="about-gallery" class="grid-item">
+                            <img src="/images/about-page/gallery/img-gallery-11.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-12.jpg" data-fancybox="about-gallery" class="grid-item">
+                            <img src="/images/about-page/gallery/img-gallery-12.jpg"
+                        /></a>
+                        <a href="/images/about-page/gallery/img-gallery-2.jpg" data-fancybox="about-gallery" class="grid-item">
+                            <img src="/images/about-page/gallery/img-gallery-2.jpg"
+                        /></a>
+                    </div>
+                </section>
+
+                <section class="about-blog">
+                    <div>
+                        <h2>Blog</h2>
+                        <p>
+                            Get the latest on custom design and development, internet marketing, search engine optimization (SEO), and the importance of custom software that will
+                            bring your business above the rest. As we demonstrate to you in our blog posts, content is an important part of your marketing strategy. So through
+                            these posts you’ll understand how different services we offer combine to create a powerful online presence.
+                        </p>
+                        <div class="blog-items">
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/4-undeniable-benefits-of-having-custom-software-for-your-business.jpg"
+                                            alt="4-undeniable-benefits-of-having-custom-software-for-your-business.jpg"
+                                            title="4-undeniable-benefits-of-having-custom-software-for-your-business"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/3-examples-of-successful-custom-software-for-businesses.jpg"
+                                            alt="3-examples-of-successful-custom-software-for-businesses.jpg"
+                                            title="3-examples-of-successful-custom-software-for-businesses"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>3 examples of successful custom software for businesses</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/3-digital-marketing-trends-for-right-now-617093.jpg"
+                                            alt="3-digital-marketing-trends-for-right-now-617093.jpg"
+                                            title="3-digital-marketing-trends-for-right-now"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto-776311.jpg"
+                                            alt="5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto"
+                                            title="5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="exp-link" href="/html/blog.html" title="View all blogs">View All <img src="/images/icons/arrow-right.png" alt="" /></a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer inner-block">
+                <div class="global-wrapper">
+                    <div class="ft-item">
+                        <img src="/images/misc/logo.png" alt="Vestra Inet" title="Vestra Inet" />
+                        <p class="ft-descr">
+                            With decades of experience in the industry, Vestra Inet is the leading custom web design and business solutions provider in the GTA. Our highly skilled
+                            team of professionals develop the ultimate custom business software, combining them with the best-in-class marketing solutions and incredible website
+                            design to craft the ultimate overall solution to launch your business into a new age of efficiency and success.
+                        </p>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Site Map</div>
+                        <ul>
+                            <li><a class="" href="/" title="Home">Home</a></li>
+                            <li><a class="" href="/html/about.html" title="About Us">About Us</a></li>
+                            <li><a class="" href="/html/services.html" title="Our Services">Our Services</a></li>
+                            <li>
+                                <a class="" href="/website-design-toronto.html" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="" href="/html/testimonials.html" title="Testimonials">Testimonials</a></li>
+                            <li><a class="" href="/html/blogs.html" title="Blog">Blog</a></li>
+                            <li><a class="" href="/html/employment.html" title="Employment">Employment</a></li>
+                            <li><a class="" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Services</div>
+                        <ul>
+                            <li><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                            <li><a href="/html/services/services-web-design.html" title="Web Design">Web Design</a></li>
+                            <li>
+                                <a href="/html/services/services-internet-marketing-promotion.html" title="Internet Marketing &amp; Promotion"
+                                    >Internet Marketing &amp; Promotion</a
+                                >
+                            </li>
+                            <li><a href="/html/services/services-online-ordering-eCommerce.html" title="E Commerce Solutions">E Commerce Solutions</a></li>
+                            <li><a href="/html/services/services-consulting-analysis.html" title="Consulting Analisis">Consulting Analysis</a></li>
+                            <li><a href="/html/services/services-video-photography.html" title="Video Design">Video And Photography</a></li>
+                            <li><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            <li><a href="/html/services/services-corporate-Identity.html" title="Corporate Identity">Corporate Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Contact Us</div>
+                        <ul>
+                            <li>100 Drumlin Cir.<br />Suite 201, Concord, ON<br />L4K 3E5</li>
+                            <li>
+                                <span class="ft-phone">Phone:<br />905.761.8078</span>
+                            </li>
+                        </ul>
+                        <div>Vestrainet, 2021 All rights Reserved</div>
+                        <div class="google-badges">
+                            <div>
+                                <a
+                                    href="https://www.google.ca/search?q=vestra+inet+review&amp;rlz=1C1CHBD_enCA768CA768&amp;oq=vestra+inet+review&amp;aqs=chrome..69i57j69i60l3j0.7429j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                    target="_blank"
+                                    ><img src="/images/icons/google_review.png" alt=""
+                                /></a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                    ><img src="/images/icons/facebook_icon.png" alt="facebook_icon.png"
+                                /></a>
+                                <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"><img src="/images/icons/twitter_icon.png" alt="twitter_icon.png" /></a>
+                                <a href="https://www.instagram.com/vestrainet/ " target="_blank" title="Instagram"
+                                    ><img src="/images/icons/instagram_icon.png" alt="instagram_icon.png"
+                                /></a>
+                                <a href="https://www.linkedin.com/company/vestra-inet/ " target="_blank" title="LinkedIn"
+                                    ><img src="/images/icons/linkedin_icon.png" alt="linkedin_icon.png"
+                                /></a>
+                                <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber " target="_blank" title="YouTube"
+                                    ><img src="/images/icons/youtube_icon.png" alt="youtube_icon.png"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Quote form popup -->
+        <div id="quote-popup">
+            <div class="quote-overlay"></div>
+            <div class="quote-popup-head">
+                <h5>Contact Us</h5>
+                <h3>Have a Project for Your Business in Mind?</h3>
+                <p>We're excited to learn more and share some ideas. You can provide a few details through the form below, reach us by phone at 905.761.8078</p>
+            </div>
+            <form data-action="Inquire">
+                <div class="grid-2col">
+                    <input type="text" name="name" placeholder="Name*" required />
+                    <input type="text" name="company" placeholder="Company (Optional)" />
+                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                    <input type="email" name="email" placeholder="Email*" required />
+                </div>
+
+                <textarea name="message"></textarea>
+
+                <p>Attach file (Optional)</p>
+                <div class="quote-file">
+                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                </div>
+
+                <div class="form-msg">Regular message</div>
+                <div class="form-msg error">Error message</div>
+                <div class="form-msg success">Success message</div>
+
+                <button class="btn-sml accent js-submit-inquire">Submit</button>
+
+                <p style="opacity: 0.7">* Indicates a required field</p>
+            </form>
+        </div>
+
+        <script src="/js/main.js" defer></script>
+    </body>
+</html>
