@@ -271,6 +271,9 @@
     transition: 0.4s ease;
     overflow: hidden;
 }
+.sub-menu .sub-menu-section ul li.active a {
+    color: var(--accent-color);
+}
 .sub-menu-section {
     /* padding:35px 66px 0 66px; */
     position: relative;
@@ -279,6 +282,7 @@
     font-size: 20px;
     line-height: 28px;
     color: #fff;
+    max-width: 400px;
 }
 .sub-menu-section:last-of-type {
     margin-bottom: 35px;
@@ -783,8 +787,8 @@
     height: 620px;
 }
 
-.home-services-item ,
-.services-item{
+.home-services-item,
+.services-item {
     background-color: #f3f6fb;
     padding: 50px 70px;
     border-radius: 15px;
@@ -801,7 +805,7 @@
     height: 90%;
     transition: 0.3s ease;
 }
-.services-item{
+.services-item {
     max-width: 460px;
     height: 100%;
 }
@@ -825,7 +829,7 @@
 .home-services-item.accent .btn-sml {
     background-color: var(--accent-light);
 }
-.home-services-item-icon ,
+.home-services-item-icon,
 .services-item-icon {
     background-color: var(--accent-dark);
     border-radius: 50%;
@@ -837,7 +841,7 @@
     margin-bottom: 20px;
     transition: 0.3s ease;
 }
-.home-services-item-icon img ,
+.home-services-item-icon img,
 .services-item-icon img {
     width: 65%;
 }
@@ -867,6 +871,9 @@
     border-radius: 6px;
     font-weight: 500;
     border: none;
+}
+.services-item.accent .btn-sml {
+    background-color: var(--accent-light);
 }
 .btn-sml.chevron {
     position: relative;
@@ -2003,18 +2010,40 @@
 }
 
 /* SERVICES PAGE */
-.services-grid{
+.services-grid {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 15px;
     justify-content: center;
+    margin-bottom: 50px;
 }
-.services-grid > .home-services-item{
+.services-grid > .services-item {
     height: 100%;
     margin: 0 auto;
 }
-.services-grid > .home-services-item:hover{
-
+.services-grid > .services-item h4 {
+    margin-bottom: 30px;
+}
+.services-item-custom {
+    max-width: 460px;
+    background-color: #deeafa;
+    border-radius: 15px;
+    text-align: right;
+    padding: 27px;
+}
+.services-item-custom h3 {
+    font-size: 28.4931px;
+    line-height: 32px;
+    text-align: right;
+    color: var(--accent-dark);
+}
+.services-item-custom > img {
+    max-width: 100%;
+}
+.services-item-custom .exp-link {
+    width: max-content;
+    font-size: 16px;
+    margin: 15px auto;
 }
 
 /* [MEDIAS] */

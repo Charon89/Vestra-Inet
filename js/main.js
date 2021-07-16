@@ -1,4 +1,5 @@
 $(function () {
+    // Home page
     $('.video-block').css({ paddingTop: $('.header').outerHeight() });
 
     $('.home-services-item').on('mouseenter', function () {
@@ -8,6 +9,16 @@ $(function () {
     $('.home-services-item').on('mouseleave', function () {
         $(this).toggleClass('accent').css({ margin: '0' });
         $('.home-services-item').eq(1).addClass('accent');
+    });
+
+    // Services page
+    $('.services-item').on('mouseenter', function () {
+        $('.services-item').removeClass('accent');
+        $(this).toggleClass('accent');
+    });
+    $('.services-item').on('mouseleave', function () {
+        $(this).toggleClass('accent');
+        $('.services-item').eq(1).addClass('accent');
     });
 
     // Google review hover handlers
@@ -63,14 +74,11 @@ $(function () {
             $('.pm-sub-trigger').removeClass('minified');
         }
 
-       
         if ($('#port-filter').length)
             if ($('#port-filter').offset().top == $(window).scrollTop() + $('.header').height()) {
                 $('#port-filter').addClass('is-pinned');
             } else $('#port-filter').removeClass('is-pinned');
     });
-
-    
 
     let $menu = $('.responsive-menu-container');
 
@@ -95,27 +103,31 @@ $(function () {
     AOS.init();
 
     // Home page - team swiper
-    let teamSwiper = new Swiper('.teamSwiper', {
-        autoHeight: true,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-        },
-        //  noSwiping: true,
-        //  noSwipingClass:"teamSwiper .swiper-slide",
-    });
-    let teamSwiperMobile = new Swiper('.teamSwiperMobile', {
-        autoHeight: true,
-        spaceBetween: 20,
-        loop: true,
-        freeMode: false,
-        autoplay: {
-            delay: 3000,
-        },
-        //  noSwiping: true,
-        //  noSwipingClass:"teamSwiper .swiper-slide",
-    });
+    if ($('.teamSwiper').length) {
+        let teamSwiper = new Swiper('.teamSwiper', {
+            autoHeight: true,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            //  noSwiping: true,
+            //  noSwipingClass:"teamSwiper .swiper-slide",
+        });
+    }
+    if ($('.teamSwiperMobile').length) {
+        let teamSwiperMobile = new Swiper('.teamSwiperMobile', {
+            autoHeight: true,
+            spaceBetween: 20,
+            loop: true,
+            freeMode: false,
+            autoplay: {
+                delay: 3000,
+            },
+            //  noSwiping: true,
+            //  noSwipingClass:"teamSwiper .swiper-slide",
+        });
+    }
 
     // About page - accordion
     $('.accordion li').hover(
@@ -128,32 +140,34 @@ $(function () {
     );
 
     // About page go mobile section
-    var swiper = new Swiper('.goMobile-swiper', {
-        autoHeight: true,
-        loop: true,
-        spaceBetween: 100,
-        slidesPerView: 1,
-        autoplay: {
-            delay: 3000,
-        },
-        effect: 'slide',
-        fadeEffect: {
-            crossFade: true,
-        },
-    });
+    if ($('.goMobile-swiper').length) {
+        var swiper = new Swiper('.goMobile-swiper', {
+            autoHeight: true,
+            loop: true,
+            spaceBetween: 100,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+            },
+            effect: 'slide',
+            fadeEffect: {
+                crossFade: true,
+            },
+        });
+    }
 
     // About page parallax effect
-    $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1 });
+    if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1 });
 
     // About page gallery
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        stagger: 30,
-        gutter: 20,
-        stamp: '.stamp',
-        columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer',
-        percentPosition: true,
-    });
+    if ($('.grid').length)
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            stagger: 30,
+            gutter: 20,
+            stamp: '.stamp',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            percentPosition: true,
+        });
 });
-
