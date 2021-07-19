@@ -2083,8 +2083,20 @@
 .single-service-section {
     padding: 70px 0;
 }
+.single-service-section.ss-no-padding{
+    padding: 0;
+}
+.single-service-section.ss-no-padding .text-block{
+    padding: 70px 0;
+}
+.single-service-section.ss-no-padding .grid-2col .img-block img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
 .single-service-section .grid-2col {
     width: 80%;
+    gap: 5%;
     margin: 0 auto;
 }
 .single-service-section .grid-2col .img-block img {
@@ -2098,6 +2110,95 @@
     color: var(--accent-dark);
     font-weight: 500;
     margin-bottom: 15px;
+}
+
+.single-service-section.experience-bg {
+    /* background-image: url(/images/services/Group\ 217.png); */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.experience-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #172e4d;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.single-service-section.experience-bg h1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.single-service-section > .d3-custom-section {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.single-service-section > .d3-custom-section h1 {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.single-service-section > .d3-custom-section p {
+    margin: 0 auto;
+    max-width: 1180px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+.single-service-section-list > h2 {
+    margin: 25px auto;
+    color: #DEEAFA;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 69px;
+}
+.single-service-section-list ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+.single-service-section-list ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.custom-bullets{
+    list-style: none;
+}
+.custom-bullets li{
+    padding: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+.custom-bullets li::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--accent-dark);
+    border-radius: 50%;
 }
 
 /* [MEDIAS] */

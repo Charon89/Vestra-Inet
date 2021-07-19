@@ -171,6 +171,9 @@ $(function () {
     // About page parallax effect
     if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1 });
 
+    // Our -services - 3d - parallax effect
+    if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0 });
+
     // About page gallery
     if ($('.grid').length)
         $('.grid').masonry({
