@@ -14,8 +14,6 @@ $(function () {
                 $('.home-services-item').eq(1).addClass('accent');
             }
         }, 2000);
-
-      
     });
 
     // Services page
@@ -26,11 +24,10 @@ $(function () {
     $('.services-item').on('mouseleave', function () {
         $(this).toggleClass('accent');
         setTimeout(() => {
-            if (!$('.services-item').hasClass("accent")) {
+            if (!$('.services-item').hasClass('accent')) {
                 $('.services-item').eq(1).addClass('accent');
-            };
-        },2000)
-        
+            }
+        }, 2000);
     });
 
     // Google review hover handlers
@@ -174,7 +171,6 @@ $(function () {
     // Our -services - 3d - parallax effect
     if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0 });
 
-
     // Services select block
     $('.services-select').select2({
         placeholder: 'Select an option',
@@ -197,4 +193,21 @@ $(function () {
             gutter: '.gutter-sizer',
             percentPosition: true,
         });
+
+    // Employment page
+    $('.js-open-job').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+        $('.js-open-job').not(this).show(0);
+        $this.hide(0);
+        $('.job-item-hidden-content').slideUp(500);
+        $(this).parent().find('.job-item-hidden-content').slideDown(500);
+
+    });
+    $('.js-close-job').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+        $(this).closest('.job-item-hidden-content').slideUp(500);
+        $this.closest(".job-item").find('.js-open-job').show();
+    });
 });
