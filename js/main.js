@@ -174,6 +174,18 @@ $(function () {
     // Our -services - 3d - parallax effect
     if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0 });
 
+
+    // Services select block
+    $('.services-select').select2({
+        placeholder: 'Select an option',
+        minimumResultsForSearch: -1,
+    });
+    $('.services-select').on('select2:select', function (e) {
+        var data = e.params.data;
+        // console.log($(data.element).data("url"));
+        window.location = $(data.element).data('url');
+    });
+
     // About page gallery
     if ($('.grid').length)
         $('.grid').masonry({
