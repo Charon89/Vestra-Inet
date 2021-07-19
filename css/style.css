@@ -69,7 +69,27 @@
 .exp-link:hover {
     letter-spacing: 1px;
 }
-
+.yellow-checkmark-list {
+    list-style: none;
+}
+.yellow-checkmark-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 50px;
+}
+.yellow-checkmark-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/icons/checkmark-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .common-header {
     width: 100%;
     min-height: 150px;
@@ -79,6 +99,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 30px;
 }
 .common-header .toggler-block {
     /* background-color: #ddd; */
@@ -1887,6 +1908,10 @@
     padding: 30px;
     background-color: var(--bg-light);
 }
+
+.about-blog.ab-no-margin {
+    margin: 0;
+}
 .about-blog > div {
     width: 80%;
     margin: 0 auto;
@@ -2182,6 +2207,7 @@
     color: var(--accent-dark);
     font-weight: 500;
     margin-bottom: 15px;
+    font-size: 50px;
 }
 
 .single-service-section.experience-bg {
@@ -2271,6 +2297,66 @@
     transform: translateY(-50%);
     background-color: var(--accent-dark);
     border-radius: 50%;
+}
+
+/* [ services photo-video] */
+
+.photo-video-custom-block-1 {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+}
+.photo-video-custom-item {
+    max-width: 460px;
+    margin: 0 10px;
+    text-align: center;
+}
+.photo-video-custom-item h6 {
+    color: var(--accent-dark);
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+}
+.photo-video-custom-item > img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.photo-video-custom-block-2 {
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+}
+.photo-video-custom-block-2 > img {
+    height: 100vh;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+.photo-video-floating-block {
+    position: absolute;
+    background-color: #2f4b6841;
+    border-radius: 15px;
+    text-align: center;
+    padding: 34px 40px;
+    max-width: 460px;
+    pointer-events: none;
+    cursor: default;
+    user-select: none;
+}
+.photo-video-floating-block h6 {
+    color: var(--accent-dark);
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+.photo-video-floating-block.fb-1 {
+    top: 5%;
+    right: 10%;
+}
+.photo-video-floating-block.fb-2 {
+    bottom: 5%;
+    left: 10%;
 }
 
 /* [MEDIAS] */
