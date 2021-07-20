@@ -9,6 +9,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 300px;
+    width: 100% !important;
+    max-width: 1000px !important;
     min-height: 300px;
     position: relative1;
     overflow: hidden;
@@ -109,7 +111,7 @@ textarea {
 
 .quote-popup-head h3 ,
 .job-popup .quote-popup-head h3 {
-    margin: 0;
+    margin: 0 auto;
     width: max-content;
     max-width: 100%;
     white-space: pre-wrap;

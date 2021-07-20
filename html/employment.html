@@ -192,7 +192,15 @@
                                 <p><strong>Please apply only if you have a valid driver's license and reliable vehicle.</strong></p>
 
                                 <div>
-                                    <a data-fancybox="job" href="#job-popup" title="Apply for a job" data-options='{"touch" : false}' class="primary-button accent job">Apply</a>
+                                    <a
+                                        data-fancybox
+                                        href="#job-popup"
+                                        data-title="Sales Consultant - Outside & Inside Sales"
+                                        title="Apply for a job"
+                                        
+                                        class="primary-button accent job"
+                                        >Apply</a
+                                    >
                                     <a href="#" class="js-close-job" title="Close job">Close <img src="/images/icons/icon-close-yellow.png" alt="" /></a>
                                 </div>
                             </div>
@@ -227,7 +235,15 @@
                                 <p><strong>NOTE: Candidates invited for an interview will be asked to complete a test to demonstrate their capabilities.</strong></p>
 
                                 <div>
-                                    <a href="#" class="primary-button accent job" title="Apply for a job">Apply</a>
+                                    <a
+                                        data-fancybox
+                                        href="#job-popup"
+                                        data-title="PHP Developer"
+                                        title="Apply for a job"
+                                        
+                                        class="primary-button accent job"
+                                        >Apply</a
+                                    >
                                     <a href="#" class="js-close-job" title="Close job">Close <img src="/images/icons/icon-close-yellow.png" alt="" /></a>
                                 </div>
                             </div>
@@ -275,7 +291,15 @@
                                 </p>
 
                                 <div>
-                                    <a href="#" class="primary-button accent job" title="Apply for a job">Apply</a>
+                                    <a
+                                        data-fancybox
+                                        href="#job-popup"
+                                        data-title="Remote Telemarketer"
+                                        title="Apply for a job"
+                                        
+                                        class="primary-button accent job"
+                                        >Apply</a
+                                    >
                                     <a href="#" class="js-close-job" title="Close job">Close <img src="/images/icons/icon-close-yellow.png" alt="" /></a>
                                 </div>
                             </div>
@@ -399,14 +423,13 @@
                 <p style="opacity: 0.7">* Indicates a required field</p>
             </form>
         </div>
-        
-        <!-- Quote form popup -->
+
+        <!-- Apply for a job popup -->
         <div class="job-popup" id="job-popup">
             <div class="quote-overlay"></div>
             <div class="quote-popup-head">
                 <h5>Apply for position</h5>
                 <h3 class="job-popup-position">Have a Project for Your Business in Mind?</h3>
-                
             </div>
             <form data-action="job">
                 <div class="grid-2col">
@@ -420,9 +443,11 @@
 
                 <p>Attach file (Optional)</p>
                 <div class="quote-file">
-                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
-                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                    <label for="quote-upload-2" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload-2" class="quote-upload-in" name="file" type="file" />
                 </div>
+
+                <input type="hidden" name="position">
 
                 <div class="form-msg">Regular message</div>
                 <div class="form-msg error">Error message</div>
@@ -434,7 +459,6 @@
             </form>
         </div>
 
-        <script src="/js/_portfolio.js" defer></script>
         <script src="/js/main.js" defer></script>
     </body>
 </html>

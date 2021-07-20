@@ -9,6 +9,9 @@
     --accent-color: #ffae12;
     --accent-light: #a2c9e2;
     --accent-dark: #172e4d;
+    --accent-dark-2: #2F4B68;
+
+    --gray-1: #828282;
 
     --bg-light: #f3f6fb;
     --bg-d-light: #DEEAFA;
@@ -238,7 +241,8 @@ input.error{
     margin: 15px 0;
     background-size: 300% 100%;
     background-position: 0% 0%;
-    background-image: linear-gradient(to right, #0b2341, #537895, #70a4cc, #134581);
+    /* background-image: linear-gradient(to right, #0b2341, #537895, #70a4cc, #134581); */
+    background-image: linear-gradient(to right, var(--accent-dark-2), var(--accent-dark-2));
     box-shadow: 0 4px 15px 0 rgba(7, 34, 75, 0.281);
     moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -293,7 +297,8 @@ input.error{
     left: calc(100% - 47px);
 }
 .primary-button.accent {
-    background-image: linear-gradient(to right, #ffae12, #dfbe37, #e9b407, #ffae12);
+    background-image: linear-gradient(to right, var(--accent-color), var(--accent-color));
+    /* background-image: linear-gradient(to right, #ffae12, #dfbe37, #e9b407, #ffae12); */
     animation: bounceAccent 3s ease-in-out forwards infinite;
     color: #fff;
 }

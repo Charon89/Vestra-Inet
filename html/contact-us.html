@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+        <!-- SwiperJs -->
+        <link rel="stylesheet" href="/css/libs/swiperJs_7.6.5.css" />
+        <script src="/js/libs/swiperJs_7.6.5.js"></script>
+
+        <title>Vestrainet - Video & Photography</title>
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div class="root">
+            <header class="header">
+                <a class="logo" href="/" title="Vestra Inet">
+                    <img src="/images/misc/logo.png" alt="Vestra Inet" />
+                </a>
+                <div class="header-block">
+                    <div id="responsive-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="responsive-menu-container">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="/html/about.html" title="About Us">About Us</a></li>
+                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <ul class="responsive-sub-menu">
+                                <h6>Software Development</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>Website DeVeLOPMENT</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-web-design.html" title="Website Design">Website Design</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>OTHER</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-photo-video.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+
+                        <div class="call-us-today">
+                            <h6>CALL US TODAY!</h6>
+                            <a href="tel:9057618078">905.761.8078</a>
+                        </div>
+                    </ul>
+
+                    <ul class="top-menu">
+                        <li class="t-menu-item"><a class="t-link" href="/" title="Home">Home</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/about.html" title="About Us">About Us</a></li>
+                        <li class="t-menu-item">
+                            <a class="t-link" href="/html/services/services.html" title="Our Services"
+                                >Our Services <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <ul>
+                                        <li><a href="/html/services/services-software-development.html">Software development</a></li>
+                                        <li><a href="/html/services/services-web-design.html">Web design</a></li>
+                                        <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
+                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
+                                        <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
+                                        <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item">
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio"
+                                >Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <p>Software Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-type-of-system.html">TYpe of System</a></li>
+                                        <li><a href="/html/portfolio/portfolio-projects-list.html">Project List</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Website Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-web-design.html">Website design</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Other</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                        <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li class="t-menu-item active"><a class="t-link" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        <li class="t-menu-item"><a class="inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="p-top70">
+                <section class="map">
+                    <!-- <div class="coords">100 Drumlin Cir. Suite 201, Concord, ON L4K 3E5</div> -->
+                    <div class="map-link">
+                        <span></span>
+                        <a
+                            href="https://www.google.ca/maps/place/100+Drumlin+Cir+%23201,+Concord,+ON+L4K+3E5/@43.7850601,-79.4893627,17z/data=!3m1!4b1!4m5!3m4!1s0x882b2e6c7a6b48d1:0xaad827f631e7d88b!8m2!3d43.7850601!4d-79.487174"
+                        ></a>
+                    </div>
+
+                    <a
+                        href="https://www.google.ca/maps/place/100+Drumlin+Cir+%23201,+Concord,+ON+L4K+3E5/@43.7850601,-79.4893627,17z/data=!3m1!4b1!4m5!3m4!1s0x882b2e6c7a6b48d1:0xaad827f631e7d88b!8m2!3d43.7850601!4d-79.487174"
+                        class="map-link-pin"
+                        >View on Google Maps <img src="/images/icons/Maps_Pin.png" alt="Maps_Pin.png" />
+                    </a>
+                </section>
+
+                <div class="txt-header" style="margin-top: 30px; max-width: unset; color: var(--accent-dark)">
+                    <h5>Let’s Connect</h5>
+                    <h2>Get in touch with us</h2>
+                </div>
+
+                <section class="bg-light contact-section">
+                    <div class="contact-grid">
+                        <div class="contact-coord">
+                            <div>
+                                <b>Call us</b><br />
+                                <a href="tel:+19057618078">905.761.8078</a>
+                            </div>
+
+                            <div>
+                                <b>Call us</b><br />
+                                <p>100 Drumlin Cir. Suite 201, Concord, ON L4K 3E5</p>
+                            </div>
+
+                            <div>
+                                <b>Find Us</b><br />
+
+                                <div class="socials">
+                                    <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                        ><img src="/images/icons/Facebook_dark.png" alt="Facebook_dark.png"
+                                    /></a>
+
+                                    <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"
+                                        ><img src="/images/icons/Twitter_dark.png" alt="Twitter_dark.png"
+                                    /></a>
+
+                                    <a href="https://www.instagram.com/vestrainet/" target="_blank" title="Instagram"
+                                        ><img src="/images/icons/Instagram_dark.png" alt="Instagram_dark.png"
+                                    /></a>
+
+                                    <a href="https://www.linkedin.com/company/vestra-inet/" target="_blank" title="LinkedIn"
+                                        ><img src="/images/icons/LinkedIn_dark.png" alt="LinkedIn_dark.png"
+                                    /></a>
+
+                                    <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber" target="_blank" title="YouTube"
+                                        ><img src="/images/icons/Youtube_dark.png" alt="Youtube_dark.png"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <form data-action="Inquire">
+                                <div class="grid-2col">
+                                    <input type="text" name="name" placeholder="Name*" required />
+                                    <input type="text" name="company" placeholder="Company (Optional)" />
+                                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                                    <input type="email" name="email" placeholder="Email*" required />
+                                </div>
+
+                                <textarea name="message"></textarea>
+
+                                <p>Attach file (Optional)</p>
+                                <div class="quote-file">
+                                    <label for="quote-upload-3" class="quote-upload"> BROWSE </label>
+                                    <input id="quote-upload-3" class="quote-upload-in remove-red" name="file" type="file" />
+                                </div>
+
+                                <div class="form-msg">Regular message</div>
+                                <div class="form-msg error">Error message</div>
+                                <div class="form-msg success">Success message</div>
+
+                                <button class="btn-sml large js-submit-inquire">Submit</button>
+
+                                <p style="opacity: 0.7">* Indicates a required field</p>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="h-google-reviews bg-d-light">
+                    <div class="inner-section">
+                        <div class="txt-header mar-t2">
+                            <h5 class="font-accent-dark">What customers say about us</h5>
+                            <h2 class="font-accent-dark flex j-c">Recent <img style="margin-inline: 10px" src="/images/icons/Google_logo.png" alt="Google_logo.png" /> Reviews</h2>
+                            <div class="flex j-c">
+                                <span>4.9</span><img class="mar-lr1" src="/images/misc/star_rate.png" alt="star_rate.png" /> <a href="#">68 Google reviews</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container g-reviews-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide g-review-slide">
+                                    <a
+                                        href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                        target="_blank"
+                                        class="g-review-slide-inner"
+                                    >
+                                        <div class="flex fd-c">
+                                            <img src="/images/misc/user_avatar.png" alt="" />
+                                            <img src="/images/misc/star_rate.png" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>
+                                                I could not compliment Ivan and his team enough - real professionals! We have been working with them on custom internal software -
+                                                they have been responsive, patient, helpful, dedicated and a pleasure to work with. Looking forward to working with them again.
+                                            </p>
+                                            <b>Sergei Kozodaiev</b><br />
+                                            <small>10 days ago</small>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide g-review-slide">
+                                    <a
+                                        href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                        target="_blank"
+                                        class="g-review-slide-inner"
+                                    >
+                                        <div class="flex fd-c">
+                                            <img src="/images/misc/user_avatar.png" alt="" />
+                                            <img src="/images/misc/star_rate.png" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>
+                                                I could not compliment Ivan and his team enough - real professionals! We have been working with them on custom internal software -
+                                                they have been responsive, patient, helpful, dedicated and a pleasure to work with. Looking forward to working with them again.
+                                            </p>
+                                            <b>Sergei Kozodaiev</b><br />
+                                            <small>10 days ago</small>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide g-review-slide">
+                                    <a
+                                        href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                        target="_blank"
+                                        class="g-review-slide-inner"
+                                    >
+                                        <div class="flex fd-c">
+                                            <img src="/images/misc/user_avatar.png" alt="" />
+                                            <img src="/images/misc/star_rate.png" alt="" />
+                                        </div>
+                                        <div>
+                                            <p>
+                                                I could not compliment Ivan and his team enough - real professionals! We have been working with them on custom internal software -
+                                                they have been responsive, patient, helpful, dedicated and a pleasure to work with. Looking forward to working with them again.
+                                            </p>
+                                            <b>Sergei Kozodaiev</b><br />
+                                            <small>10 days ago</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                        <!-- <div class="google-reviews">
+                            <a href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,," class="google-review-item">
+                                <img class="google-review-avatar" src="/images/misc/user_avatar.png" alt="user_avatar.png">
+                                <img class="google-review-starRate" src="/images/misc/star_rate.png" alt="">
+                                <p class="google-review-text">
+                                    I could not compliment Ivan and his team enough - real professionals! We have been working with them on custom internal software - they have
+                                    been responsive, patient, helpful, dedicated and a pleasure to work with. Looking forward to working with them again.
+                                </p>
+
+                                <b class="google-review-userName">Sergei Kozodaiev</b>
+                                <p class="google-review-date">10 days ago</p>
+                            </a>
+                            <a href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,," class="google-review-item blur">
+                                <img class="google-review-avatar" src="/images/misc/user_avatar.png" alt="user_avatar.png">
+                                <img class="google-review-starRate" src="/images/misc/star_rate.png" alt="">
+                                <p class="google-review-text">
+                                    Their team is very responsible and friendly, they asked lots of questions to turn our idea into reality. I needed a custom quotation software,
+                                    and what we liked the most in Vestra Inet team was the ability to understand our needs. It took a month longer, then was initially planned, but
+                                    this wasn’t a big issue.
+                                </p>
+
+                                <b class="google-review-userName">Sergei Kozodaiev</b>
+                                <p class="google-review-date">2 days ago</p>
+                            </a>
+                            <a href="https://www.google.com/search?q=vestrainet&amp;rlz=1C1GIVA_enCA889CA889&amp;oq=vestrainet&amp;aqs=chrome.0.69i59j46i10i175i199i275j0i10j69i60l4.1843j1j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,," class="google-review-item blur">
+                                <img class="google-review-avatar" src="/images/misc/user_avatar.png" alt="user_avatar.png">
+                                <img class="google-review-starRate" src="/images/misc/star_rate.png" alt="">
+                                <p class="google-review-text">
+                                    I could not compliment Ivan and his team enough - real professionals! We have been working with them on custom internal software - they have
+                                    been responsive, patient, helpful, dedicated and a pleasure to work with. Looking forward to working with them again.
+                                </p>
+
+                                <b class="google-review-userName">Sergei Kozodaiev</b>
+                                <p class="google-review-date">4 days ago</p>
+                            </a>
+                        </div> -->
+
+                        <!-- <a class="google-review-loadMore" href="#">Load more</a> -->
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer inner-block">
+                <div class="global-wrapper">
+                    <div class="ft-item">
+                        <img src="/images/misc/logo.png" alt="Vestra Inet" title="Vestra Inet" />
+                        <p class="ft-descr">
+                            With decades of experience in the industry, Vestra Inet is the leading custom web design and business solutions provider in the GTA. Our highly skilled
+                            team of professionals develop the ultimate custom business software, combining them with the best-in-class marketing solutions and incredible website
+                            design to craft the ultimate overall solution to launch your business into a new age of efficiency and success.
+                        </p>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Site Map</div>
+                        <ul>
+                            <li><a class="" href="/" title="Home">Home</a></li>
+                            <li><a class="" href="/html/about.html" title="About Us">About Us</a></li>
+                            <li><a class="" href="/html/services.html" title="Our Services">Our Services</a></li>
+                            <li>
+                                <a class="" href="/website-design-toronto.html" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="" href="/html/testimonials.html" title="Testimonials">Testimonials</a></li>
+                            <li><a class="" href="/html/blogs.html" title="Blog">Blog</a></li>
+                            <li><a class="" href="/html/employment.html" title="Employment">Employment</a></li>
+                            <li><a class="" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Services</div>
+                        <ul>
+                            <li><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                            <li><a href="/html/services/services-web-design.html" title="Web Design">Web Design</a></li>
+                            <li>
+                                <a href="/html/services/services-internet-marketing-promotion.html" title="Internet Marketing &amp; Promotion"
+                                    >Internet Marketing &amp; Promotion</a
+                                >
+                            </li>
+                            <li><a href="/html/services/services-online-ordering-eCommerce.html" title="E Commerce Solutions">E Commerce Solutions</a></li>
+                            <li><a href="/html/services/services-consulting-analysis.html" title="Consulting Analisis">Consulting Analysis</a></li>
+                            <li><a href="/html/services/services-video-photography.html" title="Video Design">Video And Photography</a></li>
+                            <li><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            <li><a href="/html/services/services-corporate-Identity.html" title="Corporate Identity">Corporate Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Contact Us</div>
+                        <ul>
+                            <li>100 Drumlin Cir.<br />Suite 201, Concord, ON<br />L4K 3E5</li>
+                            <li>
+                                <span class="ft-phone">Phone:<br />905.761.8078</span>
+                            </li>
+                        </ul>
+                        <div>Vestrainet, 2021 All rights Reserved</div>
+                        <div class="google-badges">
+                            <div>
+                                <a
+                                    href="https://www.google.ca/search?q=vestra+inet+review&amp;rlz=1C1CHBD_enCA768CA768&amp;oq=vestra+inet+review&amp;aqs=chrome..69i57j69i60l3j0.7429j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                    target="_blank"
+                                    ><img src="/images/icons/google_review.png" alt=""
+                                /></a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                    ><img src="/images/icons/facebook_icon.png" alt="facebook_icon.png"
+                                /></a>
+                                <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"><img src="/images/icons/twitter_icon.png" alt="twitter_icon.png" /></a>
+                                <a href="https://www.instagram.com/vestrainet/ " target="_blank" title="Instagram"
+                                    ><img src="/images/icons/instagram_icon.png" alt="instagram_icon.png"
+                                /></a>
+                                <a href="https://www.linkedin.com/company/vestra-inet/ " target="_blank" title="LinkedIn"
+                                    ><img src="/images/icons/linkedin_icon.png" alt="linkedin_icon.png"
+                                /></a>
+                                <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber " target="_blank" title="YouTube"
+                                    ><img src="/images/icons/youtube_icon.png" alt="youtube_icon.png"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Quote form popup -->
+        <div id="quote-popup">
+            <div class="quote-overlay"></div>
+            <div class="quote-popup-head">
+                <h5>Contact Us</h5>
+                <h3>Have a Project for Your Business in Mind?</h3>
+                <p>We're excited to learn more and share some ideas. You can provide a few details through the form below, reach us by phone at 905.761.8078</p>
+            </div>
+            <form data-action="Inquire">
+                <div class="grid-2col">
+                    <input type="text" name="name" placeholder="Name*" required />
+                    <input type="text" name="company" placeholder="Company (Optional)" />
+                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                    <input type="email" name="email" placeholder="Email*" required />
+                </div>
+
+                <textarea name="message"></textarea>
+
+                <p>Attach file (Optional)</p>
+                <div class="quote-file">
+                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                </div>
+
+                <div class="form-msg">Regular message</div>
+                <div class="form-msg error">Error message</div>
+                <div class="form-msg success">Success message</div>
+
+                <button class="btn-sml accent js-submit-inquire">Submit</button>
+
+                <p style="opacity: 0.7">* Indicates a required field</p>
+            </form>
+        </div>
+        <script src="/js/main.js" defer></script>
+    </body>
+</html>
