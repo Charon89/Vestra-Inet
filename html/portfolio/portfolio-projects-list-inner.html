@@ -22,6 +22,7 @@
 
         <!-- jQuery -->
         <script src="/js/libs/jQuery_3.6.0.js"></script>
+        <script src="/js/libs/jquery-ui.min.js"></script>
 
         <!-- Fancy Box -->
         <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
@@ -30,6 +31,10 @@
         <!-- AOS JS -->
         <link rel="stylesheet" href="/css/libs/aos.css" />
         <script src="/js/libs/aos.js" defer></script>
+
+        <!-- SwiperJs -->
+        <link rel="stylesheet" href="/css/libs/swiperJs_7.6.5.css" />
+        <script src="/js/libs/swiperJs_7.6.5.js"></script>
 
         <title>Vestrainet - Projects List</title>
     </head>
@@ -135,147 +140,139 @@
                 <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-3.png)">
                     <div class="common-header-inner">
                         <div class="bread-links">
-                            <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp; <span href="/">Portfolio</span> &nbsp;&gt;&nbsp;
-                            <a href="/html/portfolio/portfolio-type-of-system.html">SOFTWARE DEVELOPMENT</a>
+                            <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp; <a href="/html/portfolio/portfolio-projects-list.html">SOFTWARE DEVELOPMENT</a> &nbsp;&gt;&nbsp;
+                            <a href="/html/portfolio/portfolio-type-of-system-inner.html">lock 8</a>
                         </div>
                         <h1>SOFTWARE DEVELOPMENT</h1>
-                        <p>Project List</p>
+                        <p>Lock 8</p>
                     </div>
                 </div>
 
-                <section class="common-section">
-                    <div class="txt-header s-type">
-                        <h5>LET US CRAFT YOUR ULTIMATE EXPERIENCE</h5>
-                        <h2>Custom Software We Did in the Past</h2>
+                <section class="pr-inner-logo">
+                    <img src="/images/portfolio/logos/Logolock8.png" alt="Logolock8.png" />
+                </section>
+
+                <section class="mar-tb2">
+                    <div class="pr-inner-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Custom ERP with rental functionality</li>
+                            <li>Inventory management system</li>
+                            <li>Order management system</li>
+                            <li>Custom work order and service order creation tools</li>
+                            <li>Intelligent order form and quotation generation</li>
+                            <li>Long-term and short-term rental support</li>
+                            <li>Accounting system</li>
+                            <li>Custom reporting functionality</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="about-business-solutions">
+                    <div class="pr-about">
+                        <h3>About Lock8</h3>
+                        <p>
+                            Lock 8 provides you with the best in brand name for a competitive price, all at your convenience. We also design and manufacture our own line of welding
+                            rack systems for multiple job site uses. From manufacturing to mining and everything in between Lock 8 Equipment offers the knowledge and experience
+                            necessary to ensure project success when it comes to having the best service, equipment, and consumables necessary – regardless of size and scope of
+                            project.
+                        </p>
                     </div>
                 </section>
 
                 <section>
-                    <div class="pr-list-grid">
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-lock8.png" alt="logo-lock8.png" />
-                            <div>
+                    <div class="pr-inner-grid">
+                        <div>
+                            <h3>Type of Systems Used in Project</h3>
+                            <div id="pr-accordion">
+                                <h6>Custom ERP with rental functionality</h6>
                                 <div>
-                                    <b>Lock 8</b>
-                                    <ul>
-                                        <li>Custom ERP with rental functionality</li>
-                                        <li>Order management system</li>
-                                        <li>Maintenance and service tracking</li>
-                                        <li>Custom accounting system</li>
-                                    </ul>
+                                    <p>
+                                        The custom ERP solution for Lock8 offers specialized functionality for tracking orders, managing inventory, and providing options for
+                                        high-level reporting. Uniquely, the ERP also includes a rental management component to offer products for rent or lease instead of purchase.
+                                        The software is used to assign prices, create recurring rentals, assign statuses to items, and to track the life cycle of a rented item from
+                                        the moment it is made available to the moment it is returned.
+                                    </p>
                                 </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
+                                <h6>Order management system</h6>
+                                <div>
+                                    <p>
+                                        Customers can place orders for consumable inventory items or rental items using the website, email, or even telephone. Orders are converted
+                                        into quotes, which are mailed to customers for approval before being converted to work orders. Work orders automatically change inventory
+                                        levels to eliminate stock inconsistencies.
+                                    </p>
+                                </div>
+                                <h6>Maintenance and service tracking</h6>
+                                <div>
+                                    <p>
+                                        Returned rental items can be assigned custom statuses, such as Maintenance or Repair. Internal work orders can be created to calculate the
+                                        cost of maintenance and sent to different departments for processing.
+                                    </p>
+                                </div>
+                                <h6>Custom accounting system</h6>
+                                <div>
+                                    <p>
+                                        The accounting system for Lock8 was upgraded with custom reporting and key functionality such as accounts receivable, accounts payable,
+                                        credit balance information, and general ledger information to ensure accuracy and precision in daily operations.
+                                    </p>
+                                </div>
                             </div>
-                        </a>
+                            <p>
+                                Lock8 supplies high-quality welding equipment for contractors and skilled tradespeople. They sell new and refurbished tooling as well as gases. Gas
+                                cylinders and specialty equipment can also be rented instead of being purchased.
+                            </p>
+                            <br />
+                            <p>
+                                A full ERP solution was required to manage the entire inventory of both consumable items and rental equipment. This software needed to manage
+                                orders, stock levels, and internal work orders as well as providing a method to accurately track rental equipment to avoid incurring expensive
+                                losses through human error. Additionally, the accounting system required an upgrade to meet the unique business requirements of Lock8.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="swiper-container project-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-inventory-regular.jpg" alt="lock8-inventory-regular.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-Invoices.jpg" alt="lock8-Invoices.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-jounals.jpg" alt="lock8-jounals.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-product-library.jpg" alt="lock8-product-library.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-quotes.jpg" alt="lock8-quotes.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/images/portfolio/project-slides/lock8/lock8-worksheet.jpg" alt="lock8-worksheet.jpg" />
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-carlsberg.png" alt="logo-carlsberg.png" />
-                            <div>
-                                <div>
-                                    <b>Carlsberg Group Canada</b>
-                                    <ul>
-                                        <li>Forecasting software</li>
-                                        <li>Inventory management automation</li>
-                                        <li>Synchronization with Microsoft NAV</li>
-                                        <li>Order tracking</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
+                <section class="bg-light pr-custom-quote-section">
+                    <div class="pr-custom-quote-block">
+                        <div>
+                            <!-- <img src="/images/portfolio/1E7A5078-Edit 1.png" alt="1E7A5078-Edit 1.png" /> -->
+                        </div>
+                        <div>
+                            <h2 class="font-accent-dark">Need a <span class="font-accent font-ra">custom</span> <span class="b600"> software solution</span>?</h2>
 
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-madani.png" alt="logo-madani.png" />
-                            <div>
-                                <div>
-                                    <b>Madani Rings</b>
-                                    <ul>
-                                        <li>Visual product configuration</li>
-                                        <li>Advanced pricing calculator</li>
-                                        <li>Price margin management</li>
-                                        <li>Custom sales reports</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
+                            <p>
+                                Our consultants are keen to understand your unique needs and help you find a solution that fits your business just right. Contact us to book an
+                                appointment today!
+                            </p>
 
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-custom-control.png" alt="logo-custom-control.png" />
-                            <div>
-                                <div>
-                                    <b>Custom Control Panel</b>
-                                    <ul>
-                                        <li>Custom Control Panel</li>
-                                        <li>Quote generator</li>
-                                        <li>Purchase order management</li>
-                                        <li>Order tracking</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
-
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-mad-elevator.png" alt="logo-mad-elevator.png" />
-                            <div>
-                                <div>
-                                    <b>MAD Elevator</b>
-                                    <ul>
-                                        <li>Custom ERP with rental functionality</li>
-                                        <li>Order management system</li>
-                                        <li>Maintenance and service tracking</li>
-                                        <li>Custom accounting system</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-the-door-maker.png" alt="logo-the-door-maker.png" />
-                            <div>
-                                <div>
-                                    <b>Door Maker</b>
-                                    <ul>
-                                        <li>Forecasting software</li>
-                                        <li>Inventory management automation</li>
-                                        <li>Synchronization with Microsoft NAV</li>
-                                        <li>Order tracking</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-macgregors.png" alt="logo-macgregors.png" />
-                            <div>
-                                <div>
-                                    <b>MacGregors</b>
-                                    <ul>
-                                        <li>Custom Control Panel</li>
-                                        <li>Quote generator</li>
-                                        <li>Purchase order management</li>
-                                        <li>Order tracking</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
-                        <a href="/html/portfolio/portfolio-projects-list-inner.html" class="pr-list-item">
-                            <img src="/images/portfolio/logos/logo-corporate-signsinc.png" alt="logo-corporate-signsinc.png" />
-                            <div>
-                                <div>
-                                    <b>Corporate Signs</b>
-                                    <ul>
-                                        <li>Visual product configuration</li>
-                                        <li>Advanced pricing calculator</li>
-                                        <li>Price margin management</li>
-                                        <li>Custom sales reports</li>
-                                    </ul>
-                                </div>
-                                <span> <span>Learn more</span> <img src="/images/icons/arrows-right.svg" alt="arrows-right.svg" /></span>
-                            </div>
-                        </a>
+                            <a class="primary-button accent consult" data-fancybox="" href="#quote-popup" title="Consultation">Shedule a Consultation</a>
+                        </div>
                     </div>
                 </section>
             </main>

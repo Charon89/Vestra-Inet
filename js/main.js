@@ -168,6 +168,23 @@ $(function () {
                 prevEl: '.swiper-button-prev',
             },
         });
+    if ($('.project-swiper').length)
+        var swiper = new Swiper('.project-swiper', {
+            effect: 'cube',
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    $('#pr-accordion').accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: 'content',
+    });
 
     // About page - accordion
     $('.accordion li').hover(
