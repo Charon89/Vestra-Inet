@@ -2926,12 +2926,14 @@
     height: 100%;
     object-fit: contain;
 }
+
 .project-swiper .swiper-button-next,
 .project-swiper .swiper-button-prev {
     height: 60px;
     width: 40px;
     transition: 0.3s ease;
 }
+
 .project-swiper .swiper-button-next:hover {
     box-shadow: -8px 0 15px -5px rgb(75, 91, 145);
 }
