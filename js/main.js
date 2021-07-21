@@ -168,6 +168,7 @@ $(function () {
                 prevEl: '.swiper-button-prev',
             },
         });
+
     if ($('.project-swiper').length)
         var swiper = new Swiper('.project-swiper', {
             effect: 'cube',
@@ -180,11 +181,12 @@ $(function () {
                 prevEl: '.swiper-button-prev',
             },
         });
-    $('#pr-accordion').accordion({
-        collapsible: true,
-        active: false,
-        heightStyle: 'content',
-    });
+    if ($('#pr-accordion').length)
+        $('#pr-accordion').accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: 'content',
+        });
 
     // About page - accordion
     $('.accordion li').hover(
