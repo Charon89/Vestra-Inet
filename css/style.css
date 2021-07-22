@@ -2795,6 +2795,7 @@
 }
 .pr-list-item > div {
     border-left: 2px dotted #bdbdbd;
+    height: 100%;
 }
 .pr-list-item > div > div {
     padding-left: 65px;
@@ -2863,7 +2864,8 @@
     background-repeat: no-repeat;
     background-position: center left;
     background-size: auto 100%;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
 }
 .pr-custom-quote-block {
     display: grid;
@@ -2888,15 +2890,17 @@
     width: 80%;
     margin: 2em auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(500px, 1fr) 1fr;
     gap: 40px;
 }
-
+.pr-inner-grid > div{
+    width: 100%;
+}
 .pr-inner-grid > div:first-child h3 {
     font-weight: 500;
     font-size: 36px;
     line-height: 55px;
-    text-align: center;
+    /* text-align: center; */
     color: var(--accent-dark);
 }
 
@@ -3010,6 +3014,11 @@
     .about-soft-development-box > div:last-of-type {
         max-width: 335px;
     }
+
+    /* [project-inner] */
+    .pr-inner-grid{
+        width: 95%;
+    }
 }
 @media (max-width: 1570px) {
     /* [top menu transform] */
@@ -3021,6 +3030,29 @@
     .about-marketing > div:not(.txt-header) {
         width: 90%;
         max-width: unset;
+    }
+
+    /* [project-list] */
+    .pr-list-grid{
+        width: 90%;
+        gap: 20px;
+    }
+    /* [project-inner] */
+    .pr-custom-quote-section{
+        position: relative;
+    }
+    .pr-custom-quote-block > div:first-of-type{
+        display: none;
+    }
+    .pr-custom-quote-block{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+    }
+    .pr-custom-quote-block > div:last-of-type{
+        padding: 40px;
     }
 }
 @media (max-width: 1443px) {
@@ -3131,6 +3163,11 @@
     .s-ad {
         display: none;
     }
+
+    /* [project-inner] */
+    .swiper-container.project-swiper{
+        max-width: 600px;
+    }
 }
 @media (max-width: 1380px) {
     /* [about - soft development] */
@@ -3177,6 +3214,19 @@
         grid-column: 3;
         grid-row: 1;
     }
+
+    /* [project-list] */
+        .pr-list-grid{
+            grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* [project-inner] */
+    .pr-inner-grid{
+        grid-template-columns: 1fr;
+    }
+    .pr-inner-grid > div:first-of-type{
+        order: 2;
+    }
 }
 @media (max-width: 1220px) {
     /* [top menu transform] */
@@ -3190,6 +3240,11 @@
     }
     .mk-body {
         display: none;
+    }
+
+    /* [project-inner] */
+    .pr-inner-features ul{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 1130px) {
@@ -3355,6 +3410,10 @@
         max-height: unset;
         height: auto;
     }
+        /* [project-list] */
+        .pr-list-grid{
+            grid-template-columns: repeat(2, 1fr);
+
 }
 
 @media (max-width: 870px) {
@@ -3510,6 +3569,23 @@
         width: 80%;
         justify-items: center;
         grid-template-rows: auto;
+    }
+    .pr-inner-features h3{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+     .pr-inner-features ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pr-inner-features ul li{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 780px) {
+    .pr-custom-quote-block h2{
+        font-size: 25px;
     }
 }
 
@@ -3771,6 +3847,34 @@
         color: var(--accent-dark);
         font-weight: 600;
     }
+        /* [project-list] */
+        .pr-list-grid{
+            grid-template-columns: 1fr;
+        }
+        .pr-list-item{
+            background-color: var(--bg-light);
+            border-radius: 15px;
+        }
+        .pr-list-item > div > div{
+            padding-left: 40px;
+        }
+        .pr-list-item > div > div b{
+            display: none;
+        }
+        .pr-list-item > div{
+            border: none;
+        }
+
+        /* [project-inner] */
+        .pr-inner-grid{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        .swiper-container.project-swiper .swiper-button-next,
+        .swiper-container.project-swiper .swiper-button-prev{
+            display: none;
+        }
 }
 @media (max-width: 600px) {
     /* [about - we specialize] */
@@ -3807,6 +3911,10 @@
         font-size: 18px;
         line-height: 20px;
         font-weight: 700;
+    }
+        /* [project-inner] */
+    .pr-custom-quote-block{
+        width: 100%;
     }
 }
 
