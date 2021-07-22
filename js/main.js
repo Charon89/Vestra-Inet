@@ -173,6 +173,7 @@ $(function () {
         var swiper = new Swiper('.project-swiper', {
             effect: 'cube',
             grabCursor: true,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
             },
