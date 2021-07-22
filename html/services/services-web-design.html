@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+        <style>
+            .stacked-cards {
+                display: flex;
+                overflow-x: scroll;
+                padding-left: 1rem;
+            }
+            .stacked-cards .card-grid {
+                padding: 3rem;
+                min-width: 220px;
+            }
+            .stacked-cards .childs {
+                display: flex;
+                /* overflow-x: visible; */
+         
+                perspective: 600px;
+            }
+            .stacked-cards .childs .child {
+                margin: 0;
+                /* padding: 1.5rem; */
+                background-color: #17141d;
+                border-radius: 0.5rem;
+                box-shadow: -1rem 0 3rem #000;
+                transition: 0.2s;
+               transform-style: preserve-3d;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                transform: rotateZ(45deg);
+            }
+            .stacked-cards .childs .child:not(:first-child) {
+                margin-left: -5rem;
+            }
+            .stacked-cards .childs .child:hover,
+            .stacked-cards .childs .child:focus-within {
+                z-index: 99;
+                transform: translateY(-1rem);
+            }
+            .stacked-cards .childs .child:hover ~ .child,
+            .stacked-cards .childs .child:focus-within ~ .child {
+                transform: translateX(2rem);
+            }
+            .stacked-cards .childs .child > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        </style>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="stacked-cards">
+            <div class="card-grid">
+                <div class="childs">
+                    <article class="child">
+                        <img src="/images/portfolio/project-slides/lock8/lock8-inventory-regular.jpg" />
+                        
+                    </article>
+                    <article class="child">
+                        <img src="/images/portfolio/project-slides/lock8/lock8-Invoices.jpg" />
+                    </article>
+                    <article class="child">
+                        <img src="/images/portfolio/project-slides/lock8/lock8-jounals.jpg" />
+                    </article>
+                    <article class="child">
+                        <img src="/images/portfolio/project-slides/lock8/lock8-product-library.jpg" />
+                    </article>
+                    <article class="child">
+                        <img src="/images/portfolio/project-slides/lock8/lock8-quotes.jpg" />
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>

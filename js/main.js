@@ -191,7 +191,9 @@ $(function () {
             active: false,
             heightStyle: 'content',
         });
-
+    $('.t-card').on("click", function () {
+      $(this).toggleClass("anim")
+});
     // About page - accordion
     $('.accordion li').hover(
         function (e) {

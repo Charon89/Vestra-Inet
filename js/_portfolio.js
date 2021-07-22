@@ -19,7 +19,6 @@ $(function () {
         var loopActive = true;
 
         setInterval(function () {
-            console.log("I")
             if (loopActive && $('.portfolio-cards').inView()) {
                 loopActive = false;
                 $.ajax({

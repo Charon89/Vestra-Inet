@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/play-btn.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+
+        <title>Vestrainet - Photo & Video</title>
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div class="root">
+            <header class="header">
+                <a class="logo" href="/" title="Vestra Inet">
+                    <img src="/images/misc/logo.png" alt="Vestra Inet" />
+                </a>
+                <div class="header-block">
+                    <div id="responsive-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="responsive-menu-container">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="/html/about.html" title="About Us">About Us</a></li>
+                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <ul class="responsive-sub-menu">
+                                <h6>Software Development</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>Website DeVeLOPMENT</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-web-design.html" title="Website Design">Website Design</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>OTHER</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-photo-video.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+
+                        <div class="call-us-today">
+                            <h6>CALL US TODAY!</h6>
+                            <a href="tel:9057618078">905.761.8078</a>
+                        </div>
+                    </ul>
+
+                    <ul class="top-menu">
+                        <li class="t-menu-item"><a class="t-link" href="/" title="Home">Home</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/about.html" title="About Us">About Us</a></li>
+                        <li class="t-menu-item">
+                            <a class="t-link" href="/html/services/services.html" title="Our Services"
+                                >Our Services <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <ul>
+                                        <li><a href="/html/services/services-software-development.html">Software development</a></li>
+                                        <li><a href="/html/services/services-web-design.html">Web design</a></li>
+                                        <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
+                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
+                                        <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
+                                        <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item active">
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio">Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="" /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <p>Software Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-type-of-system.html">TYpe of System</a></li>
+                                        <li><a href="/html/portfolio/portfolio-projects-list.html">Project List</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Website Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-web-design.html">Website design</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Other</p>
+                                    <ul>
+                                        <li class="active"><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                        <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        <li class="t-menu-item"><a class="inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="p-top70">
+                <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-1.png)">
+                    <div class="common-header-inner">
+                        <div class="bread-links">
+                            <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp; <span href="/">Portfolio</span> &nbsp;&gt;&nbsp;
+                            <a href="/">photo & video</a>
+                        </div>
+                        <h1>photo & video</h1>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+
+                <section class="videos common-wrapper">
+                    <div class="photo-video-grid">
+                        <a
+                            href="https://www.youtube.com/watch?v=lJpV31i2J3g"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Tamarack Lumber Video"
+                            style="background-image: url(/images/portfolio/photos/tamarack-lumber.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Tamarack Lumber</h4>
+                                <span class="short-descr"> Drone footage - 2 Storey Townhouse Subdivisions Being Built </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span>
+                        </a>
+                        <a
+                            href="/images/portfolio/photos/tamarack-lumber.jpg"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Tamarack Lumber Photo"
+                            style="background-image: url(/images/portfolio/photos/tamarack-lumber.jpg)"
+                        >
+                            <span class="wrapper">
+                                <h4>Tamarack Lumber</h4>
+                                <span class="short-descr"> </span>
+                            </span>
+                            <span class="fade"><div>View photo</div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=-6WeybJaeT8"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title=" Islip Flow Controls Inc"
+                            style="background-image: url(/images/portfolio/photos/islip-flow-controls-inc.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Islip Flow Controls Inc</h4>
+                                <span class="short-descr"> Corporate Video </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=fKhZieYbfUc"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="D&amp;R Darta Fleet Solutions"
+                            style="background-image: url(/images/portfolio/photos/d-r-darta-fleet-solutions.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>D&amp;R Darta Fleet Solutions</h4>
+                                <span class="short-descr"> Corporate Video </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=bfUwudOg5yI"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Fibre Cast"
+                            style="background-image: url(/images/portfolio/photos/fibre-cast.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Fibre Cast</h4>
+                                <span class="short-descr"> Vlog #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=_69byN-sNck"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="RA Appliance Repair"
+                            style="background-image: url(/images/portfolio/photos/ra-appliance-repair.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>RA Appliance Repair</h4>
+                                <span class="short-descr"> Vlog #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=K4gtq183Fsk"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="D&amp;R Electronics"
+                            style="background-image: url(/images/portfolio/photos/d-r-electronics.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>D&amp;R Electronics</h4>
+                                <span class="short-descr"> Corporate Video </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=jlEflj4cRFk"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Tamarack Lumber"
+                            style="background-image: url(/images/portfolio/photos/tamarack-lumber-269419.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Tamarack Lumber</h4>
+                                <span class="short-descr"> Tamarack Lumber Yard </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=f0BikDKbxn8"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="True Gear"
+                            style="background-image: url(/images/portfolio/photos/true-gear.png)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>True Gear</h4>
+                                <span class="short-descr"> Vlog #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://vimeo.com/216210863"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Party Crew Entertaiment"
+                            style="background-image: url(/images/portfolio/photos/party-crew-entertaiment.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Party Crew Entertaiment</h4>
+                                <span class="short-descr"> Corporate Video </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=KxNCVclLwEw"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="AeroEX Product Videos"
+                            style="background-image: url(/images/portfolio/photos/aeroex-product-videos.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>AeroEX Product Videos</h4>
+                                <span class="short-descr"> AeroEX Product Videos </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=hMfB3_KFqYQ"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Islip Flow Controls Inc"
+                            style="background-image: url(/images/portfolio/photos/islip-flow-controls-inc-333748.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Islip Flow Controls Inc</h4>
+                                <span class="short-descr"> Vlog #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=lYrrOkDBwIM"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="D&amp;R Truck-Stor"
+                            style="background-image: url(/images/portfolio/photos/d-r-truck-stor.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>D&amp;R Truck-Stor</h4>
+                                <span class="short-descr"> Corporate Video </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=gw7CRP597oc"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Darta Fleet Solutions"
+                            style="background-image: url(/images/portfolio/photos/darta-fleet-solutions.png)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Darta Fleet Solutions</h4>
+                                <span class="short-descr"> Vlog #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=sKuA-6pH4MQ"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Islip Flow Controls Inc"
+                            style="background-image: url(/images/portfolio/photos/islip-flow-controls-inc-706767.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Islip Flow Controls Inc</h4>
+                                <span class="short-descr"> Product Video #1 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=XfpG-dxWDcA "
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Industrial Bandsaw Services"
+                            style="background-image: url(/images/portfolio/photos/industrial-bandsaw-services.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Industrial Bandsaw Services</h4>
+                                <span class="short-descr"> Behind the Scenes </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://youtu.be/1-tOQkqs7lI"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="ISLIP Flow Controls Inc."
+                            style="background-image: url(/images/portfolio/photos/islip-flow-controls-inc-398823.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>ISLIP Flow Controls Inc.</h4>
+                                <span class="short-descr"> Product Video #2 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://youtu.be/OOagD_0SelY"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="ISLIP Flow Controls Inc."
+                            style="background-image: url(/images/portfolio/photos/islip-flow-controls-inc-489162.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>ISLIP Flow Controls Inc.</h4>
+                                <span class="short-descr"> Product Video #3 </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://youtu.be/RnwEFW7FQyA&amp;rel=0"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Forest Hill Optical"
+                            style="background-image: url(/images/portfolio/photos/forest-hill-optical.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Forest Hill Optical</h4>
+                                <span class="short-descr"> Forest Hill Optical - Vblog </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span> </a
+                        ><a
+                            href="https://www.youtube.com/watch?v=H7LNpDY2Rkk&amp;feature=youtu.be"
+                            class="fancybox-media"
+                            data-fancybox="test"
+                            title="Tamarack Lumber"
+                            style="background-image: url(/images/portfolio/photos/tamarack-lumber-523964.jpg)"
+                        >
+                            <div class="play-btn"></div>
+                            <span class="wrapper">
+                                <h4>Tamarack Lumber</h4>
+                                <span class="short-descr"> Roof Truss Design &amp; Production by Tamarack Lumbe </span>
+                            </span>
+                            <span class="fade"><div class="play-btn"></div></span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer inner-block">
+                <div class="global-wrapper">
+                    <div class="ft-item">
+                        <img src="/images/misc/logo.png" alt="Vestra Inet" title="Vestra Inet" />
+                        <p class="ft-descr">
+                            With decades of experience in the industry, Vestra Inet is the leading custom web design and business solutions provider in the GTA. Our highly skilled
+                            team of professionals develop the ultimate custom business software, combining them with the best-in-class marketing solutions and incredible website
+                            design to craft the ultimate overall solution to launch your business into a new age of efficiency and success.
+                        </p>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Site Map</div>
+                        <ul>
+                            <li><a class="" href="/" title="Home">Home</a></li>
+                            <li><a class="" href="/html/about.html" title="About Us">About Us</a></li>
+                            <li><a class="" href="/html/services.html" title="Our Services">Our Services</a></li>
+                            <li>
+                                <a class="" href="/website-design-toronto.html" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="" href="/html/testimonials.html" title="Testimonials">Testimonials</a></li>
+                            <li><a class="" href="/html/blogs.html" title="Blog">Blog</a></li>
+                            <li><a class="" href="/html/employment.html" title="Employment">Employment</a></li>
+                            <li><a class="" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Services</div>
+                        <ul>
+                            <li><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                            <li><a href="/html/services/services-web-design.html" title="Web Design">Web Design</a></li>
+                            <li>
+                                <a href="/html/services/services-internet-marketing-promotion.html" title="Internet Marketing &amp; Promotion"
+                                    >Internet Marketing &amp; Promotion</a
+                                >
+                            </li>
+                            <li><a href="/html/services/services-online-ordering-eCommerce.html" title="E Commerce Solutions">E Commerce Solutions</a></li>
+                            <li><a href="/html/services/services-consulting-analysis.html" title="Consulting Analisis">Consulting Analysis</a></li>
+                            <li><a href="/html/services/services-video-photography.html" title="Video Design">Video And Photography</a></li>
+                            <li><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            <li><a href="/html/services/services-corporate-Identity.html" title="Corporate Identity">Corporate Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Contact Us</div>
+                        <ul>
+                            <li>100 Drumlin Cir.<br />Suite 201, Concord, ON<br />L4K 3E5</li>
+                            <li>
+                                <span class="ft-phone">Phone:<br />905.761.8078</span>
+                            </li>
+                        </ul>
+                        <div>Vestrainet, 2021 All rights Reserved</div>
+                        <div class="google-badges">
+                            <div>
+                                <a
+                                    href="https://www.google.ca/search?q=vestra+inet+review&amp;rlz=1C1CHBD_enCA768CA768&amp;oq=vestra+inet+review&amp;aqs=chrome..69i57j69i60l3j0.7429j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                    target="_blank"
+                                    ><img src="/images/icons/google_review.png" alt=""
+                                /></a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                    ><img src="/images/icons/facebook_icon.png" alt="facebook_icon.png"
+                                /></a>
+                                <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"><img src="/images/icons/twitter_icon.png" alt="twitter_icon.png" /></a>
+                                <a href="https://www.instagram.com/vestrainet/ " target="_blank" title="Instagram"
+                                    ><img src="/images/icons/instagram_icon.png" alt="instagram_icon.png"
+                                /></a>
+                                <a href="https://www.linkedin.com/company/vestra-inet/ " target="_blank" title="LinkedIn"
+                                    ><img src="/images/icons/linkedin_icon.png" alt="linkedin_icon.png"
+                                /></a>
+                                <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber " target="_blank" title="YouTube"
+                                    ><img src="/images/icons/youtube_icon.png" alt="youtube_icon.png"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Quote form popup -->
+        <div id="quote-popup">
+            <div class="quote-overlay"></div>
+            <div class="quote-popup-head">
+                <h5>Contact Us</h5>
+                <h3>Have a Project for Your Business in Mind?</h3>
+                <p>We're excited to learn more and share some ideas. You can provide a few details through the form below, reach us by phone at 905.761.8078</p>
+            </div>
+            <form data-action="Inquire">
+                <div class="grid-2col">
+                    <input type="text" name="name" placeholder="Name*" required />
+                    <input type="text" name="company" placeholder="Company (Optional)" />
+                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                    <input type="email" name="email" placeholder="Email*" required />
+                </div>
+
+                <textarea name="message"></textarea>
+
+                <p>Attach file (Optional)</p>
+                <div class="quote-file">
+                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                </div>
+
+                <div class="form-msg">Regular message</div>
+                <div class="form-msg error">Error message</div>
+                <div class="form-msg success">Success message</div>
+
+                <button class="btn-sml accent js-submit-inquire">Submit</button>
+
+                <p style="opacity: 0.7">* Indicates a required field</p>
+            </form>
+        </div>
+
+        <script src="/js/_portfolio.js" defer></script>
+        <script src="/js/main.js" defer></script>
+    </body>
+</html>
