@@ -2,19 +2,19 @@ $(function () {
     // Home page
     $('.video-block').css({ paddingTop: $('.header').outerHeight() });
 
-    $('.home-services-item').on('mouseenter', function () {
-        $('.home-services-item').removeClass('accent');
-        $(this).toggleClass('accent').css({ margin: '0 15px' });
-    });
-    $('.home-services-item').on('mouseleave', function () {
-        $(this).toggleClass('accent').css({ margin: '0' });
+    // $('.home-services-item').on('mouseenter', function () {
+    //     $('.home-services-item').removeClass('accent');
+    //     $(this).toggleClass('accent').css({ margin: '0 15px' });
+    // });
+    // $('.home-services-item').on('mouseleave', function () {
+    //     $(this).toggleClass('accent').css({ margin: '0' });
 
-        setTimeout(() => {
-            if (!$('.home-services-item').hasClass('accent')) {
-                $('.home-services-item').eq(1).addClass('accent');
-            }
-        }, 2000);
-    });
+    //     setTimeout(() => {
+    //         if (!$('.home-services-item').hasClass('accent')) {
+    //             $('.home-services-item').eq(1).addClass('accent');
+    //         }
+    //     }, 2000);
+    // });
 
     // Services page
     $('.services-item').on('mouseenter', function () {
@@ -136,6 +136,9 @@ $(function () {
             autoHeight: true,
             spaceBetween: 20,
             loop: true,
+            effect: 'fade',
+            speed: 1000,
+            fadeEffect: { crossFade: true },
             autoplay: {
                 delay: 3000,
             },
@@ -147,6 +150,8 @@ $(function () {
         let teamSwiperMobile = new Swiper('.teamSwiperMobile', {
             autoHeight: true,
             spaceBetween: 20,
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
             loop: true,
             freeMode: false,
             autoplay: {
@@ -191,9 +196,9 @@ $(function () {
             active: false,
             heightStyle: 'content',
         });
-    $('.t-card').on("click", function () {
-      $(this).toggleClass("anim")
-});
+    $('.t-card').on('click', function () {
+        $(this).toggleClass('anim');
+    });
     // About page - accordion
     $('.accordion li').hover(
         function (e) {
@@ -209,10 +214,11 @@ $(function () {
         var swiper = new Swiper('.goMobile-swiper', {
             autoHeight: true,
             loop: true,
+            speed: 1500,
             spaceBetween: 100,
             slidesPerView: 1,
             autoplay: {
-                delay: 3000,
+                delay: 5000,
             },
             effect: 'slide',
             fadeEffect: {
@@ -222,10 +228,10 @@ $(function () {
     }
 
     // About page parallax effect
-    if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1 });
+    if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1, bleed: 0 });
 
     // Our -services - 3d - parallax effect
-    if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0 });
+    if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0.1 });
 
     // Services select block
     if ($('.services-select').length)
