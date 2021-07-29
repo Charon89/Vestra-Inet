@@ -62,12 +62,14 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.275em;
+    /* letter-spacing: 0.275em; */
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: 0.3s ease;
 }
 .exp-link:hover {
-    letter-spacing: 1px;
+    letter-spacing: 0.275em;
+    /* letter-spacing: 1px; */
 }
 .yellow-checkmark-list {
     list-style: none;
@@ -1724,13 +1726,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.275em;
+    /* letter-spacing: 0.275em; */
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: 0.3s ease;
 }
 .about-we-specialize .accent-link:hover,
 .accent-link:hover {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
+    /* letter-spacing: 0.1em; */
 }
 
 /* About page - section 7 */
@@ -3334,7 +3338,7 @@
     justify-content: space-between;
     transition: 0.3s ease;
     position: relative;
-    box-shadow: 0 0 30px -19px #9fa1a5;
+    /* box-shadow: 0 0 30px -19px #9fa1a5; */
 }
 
 .perks-item h6 {
@@ -3355,11 +3359,58 @@
     width: 80%;
     margin: 0 auto;
 }
-.s-service7 .grid-1fr-2fr{
+.s-service7 .grid-1fr-2fr {
     max-width: unset;
     justify-items: center;
 }
 
+/* [service - marketing] */
+.mar-section1 > .text-block,
+.mar-section3 > .text-block {
+    width: 80%;
+    margin: 0 auto;
+}
+.mar-section1 > .grid-1fr-2fr {
+    width: 80%;
+    max-width: unset;
+}
+
+.marketing-points-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px auto;
+}
+.marketing-points-item {
+    text-align: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 15px;
+}
+.marketing-points-item img {
+    height: 80px;
+}
+.marketing-points-item h6 {
+    margin: 15px 0;
+}
+.marketing-points-item p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--accent-dark);
+}
+.mar-section3 .primary-button{
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.mar-section5{
+    background-image: url(/images/services/marketing/sect5.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
 
 /* [MEDIAS] */
 @media (max-width: 1730px) {

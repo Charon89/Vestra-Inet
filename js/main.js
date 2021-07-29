@@ -140,7 +140,7 @@ $(function () {
             speed: 1000,
             fadeEffect: { crossFade: true },
             autoplay: {
-                delay: 3000,
+                delay: 2500,
             },
             //  noSwiping: true,
             //  noSwipingClass:"teamSwiper .swiper-slide",
@@ -155,7 +155,7 @@ $(function () {
             loop: true,
             freeMode: false,
             autoplay: {
-                delay: 3000,
+                delay: 2500,
             },
             //  noSwiping: true,
             //  noSwipingClass:"teamSwiper .swiper-slide",

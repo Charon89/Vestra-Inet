@@ -1,0 +1,115 @@
+.chart-block {
+    width: 90%;
+    margin: 0 auto;
+}
+.chart-tab {
+    padding: 0 15px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.chart-tab span {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 11px;
+    border: 1px solid #cfcfcf;
+    border-bottom: 1px solid var(--bg-light);
+    margin-bottom: -1px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.chart-overview {
+    margin: 2em 1em;
+    padding-left: 20px;
+    /* background: url('/images/blue-dot-icon.png') 0 40% no-repeat; */
+    position: relative;
+}
+.chart-overview::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(46, 134, 196);
+}
+
+.small-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chart-large {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 2fr 1fr; */
+    width: 100%;
+}
+.chart-large > div:first-of-type {
+    width: 70%;
+}
+.chart-large > div:last-of-type {
+    width: 30%;
+}
+.chart-item {
+    width: 100%;
+    max-width: 247px;
+}
+.chart-item:not(.chart-item:last-of-type) {
+    display: inline-block;
+    vertical-align: top;
+    /* width: 247px; */
+    margin-bottom: 30px;
+    padding-right: 10px;
+    border-right: 1px solid #c9c9c9;
+}
+
+.chart-item svg {
+    height: 150px;
+}
+
+.chart-label {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.chart-num {
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.chart-descr {
+    margin-top: 85px;
+}
+
+.chart-descr h2 {
+    font-size: 30px;
+    color: #2f2f2f;
+}
+
+.chart-sep {
+    height: 1px;
+    background: #e0e0e0;
+    max-width: 450px;
+    margin: 1em 0;
+}
+@media (max-width: 600px) {
+    .small-charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .chart-item {
+        width: 100% !important;
+    }
+    .chart-large {
+        display: block;
+    }
+    .chart-large > div {
+        width: 100% !important;
+    }
+}
