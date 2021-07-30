@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+        <!-- parallax js -->
+        <script src="/js/libs/parallax.js" defer></script>
+
+        <!-- Select2 -->
+        <link rel="stylesheet" href="/css/libs/select2.css" />
+        <script src="/js/libs/select2.js"></script>
+
+        <!-- Charts -->
+        <link rel="stylesheet" href="/css/charts.css" />
+
+        <!-- Morris Charts -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+        <title>Vestrainet - Software Development</title>
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div class="root">
+            <header class="header">
+                <a class="logo" href="/" title="Vestra Inet">
+                    <img src="/images/misc/logo.png" alt="Vestra Inet" />
+                </a>
+                <div class="header-block">
+                    <div id="responsive-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="responsive-menu-container">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="/html/about.html" title="About Us">About Us</a></li>
+                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <ul class="responsive-sub-menu">
+                                <h6>Software Development</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>Website DeVeLOPMENT</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-web-design.html" title="Website Design">Website Design</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>OTHER</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-photo-video.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+
+                        <div class="call-us-today">
+                            <h6>CALL US TODAY!</h6>
+                            <a href="tel:9057618078">905.761.8078</a>
+                        </div>
+                    </ul>
+
+                    <ul class="top-menu">
+                        <li class="t-menu-item"><a class="t-link" href="/" title="Home">Home</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/about.html" title="About Us">About Us</a></li>
+                        <li class="t-menu-item active">
+                            <a class="t-link" href="/html/services/services.html" title="Our Services"
+                                >Our Services <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <ul>
+                                        <li><a href="/html/services/services-software-development.html">Software development</a></li>
+                                        <li><a href="/html/services/services-web-design.html">Web design</a></li>
+                                        <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
+                                        <li class="active"><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
+                                        <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
+                                        <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item">
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio"
+                                >Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <p>Software Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-type-of-system.html">TYpe of System</a></li>
+                                        <li><a href="/html/portfolio/portfolio-projects-list.html">Project List</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Website Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-web-design.html">Website design</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Other</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                        <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        <li class="t-menu-item"><a class="inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="p-top70 service-eCom">
+                <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-2.png)">
+                    <div class="common-header-inner">
+                        <div class="bread-links">
+                            <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp; <a href="/html/services/services.html">services</a> &nbsp;&gt;&nbsp;
+                            <a href="/html/services/services-online-ordering-eCommerce.html">ONLINE ORDERING& E-COMMERCE</a>
+                        </div>
+                        <h1>ONLINE ORDERING& E-COMMERCE</h1>
+                    </div>
+
+                    <div class="toggler-block">
+                        <select class="services-select" name="service-selected">
+                            <option value="Software development" data-url="/html/services/services-software-development.html">Software development</option>
+                            <option value="Web design" data-url="/html/services/services-web-design.html">Web design</option>
+                            <option value="Internet Marketing" data-url="/html/services/services-internet-marketing-promotion.html">Internet Marketing</option>
+                            <option value="E Commerce" data-url="/html/services/services-online-ordering-eCommerce.html" selected>E Commerce</option>
+                            <option value="Consulting Analysis" data-url="/html/services/services-consulting-analysis.html">Consulting Analysis</option>
+                            <option value="Corporate Identity" data-url="/html/services/services-corporate-Identity.html">Corporate Identity</option>
+                            <option value="Video & Photograph" data-url="/html/services/services-video-photography.html">Video & Photograph</option>
+                            <option value="3D Modeling" data-url="/html/services/services-3d-modeling.html">3D Modeling</option>
+                        </select>
+                    </div>
+                </div>
+
+                <section class="single-service-section eCom-section1">
+                    <div class="txt-header">
+                        <h5>MOBILE-FRIENDLY WEBSITE DESIGN</h5>
+                        <h2 class="font-accent-dark">Making B2B Operation Breeze</h2>
+                    </div>
+                    <div>
+                        <div class="eCom-section1-content">
+                            <p>
+                                The configurations that our software company develops in the context of B2B e-commerce solutions vary depending on the nature of your business needs
+                                and requirements.
+                            </p>
+                            <br /><br />
+                            <p>
+                                User-friendly interfaces, facilitated transaction processes, and secure modules create a comfortable and dynamic environment that increases the rate
+                                of return business and ensures the transactions are managed safely. All of this, and more, is available from our software design company – get
+                                started today! Some of the features we have provided include:
+                            </p>
+
+                            <div class="flex mar-t2">
+                                <ul class="custom-bullets mar-r2">
+                                    <li>Automated B2B invoicing system</li>
+                                    <li>Mobile-friendly purchasing</li>
+                                    <li>Client logins and profile management</li>
+                                    <li>Secured and monitored merchant connection</li>
+                                    <li>Accounting and inventory tracking integration</li>
+                                    <li>Order tracking and updates</li>
+                                </ul>
+                                <ul class="custom-bullets">
+                                    <li>Shipping and sales tax calculators</li>
+                                    <li>Targeted, discount, and clearance pricing structures</li>
+                                    <li>Customizable product options</li>
+                                    <li>Upselling and cross-selling capabilities</li>
+                                    <li>Budget-conscious purchasing methods</li>
+                                </ul>
+                            </div>
+
+                            <a class="exp-link mar-t2" href="/html/contact-us.html" title="View all blogs">Contact Us <img src="/images/icons/arrow-right.png" alt="" /></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="single-service-section bg-light eCom-section2">
+                    <div class="txt-header">
+                        <h5>DON’T EVER MAKE THEM SWAP SCREENS</h5>
+                        <h2 class="font-accent-dark">B2C Solutions That Keep Customers Coming Back</h2>
+                    </div>
+                    <div class="grid-1fr-2fr">
+                        <div>
+                            <img src="/images/services/eCommerce/b2c-solution 1.png" alt="b2c-solution 1.png" />
+                        </div>
+                        <div class="flex fd-c j-c">
+                            <p>
+                                A customer’s enjoyable experience purchasing from your website usually translates into repeat purchases and traffic increase form word-of-mouth
+                                referrals. To ensure this happens, we offer a variety of solutions, including:
+                            </p>
+
+                            <ul class="custom-bullets mar-t2">
+                                <li>Updated integration with mobile devices</li>
+                                <li>Multiple merchant connectivity</li>
+                                <li>Simple, one-page checkout process</li>
+                                <li>Enticing virtual product display</li>
+                                <li>Rating, review, and share features</li>
+                                <li>Customer support modules</li>
+                            </ul>
+
+                            <a class="primary-button accent inquire mar-t2" data-fancybox="" href="#quote-popup" title="Let’s discuss your project">Let’s discuss your project</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-business-solutions eCom-section3">
+                    <div>
+                        <div class="text-block text-center">
+                            <h5 class="font-light-blue">DON’T EVER MAKE THEM SWAP SCREENS</h5>
+                            <h3 class="font-white">E-Commerce That Covers All Your Needs</h3>
+                            <p>
+                                As a software company in Toronto specializing in the industrial and commercial sector, Vestra Inet has extensive experience with both
+                                business-to-business and business-to-customer platforms. We understand the specifics of each platform and know how to develop a solution that
+                                reflects your transaction process – be it a retail credit card processing system that allows the customer an option for return purchases, or a B2B
+                                invoicing system that automatically generates and sends an invoice to your client.
+                            </p>
+                        </div>
+
+                        <div class="perks-list">
+                            <div class="perks-item">
+                                <div class="perks-item-head">
+                                    <h6>The Biggest Benefits of Using Our Custom Software Development Services</h6>
+                                </div>
+                                <ul class="yellow-checkmark-list">
+                                    <li>Visual presentation of information</li>
+                                    <li>Easy to access by staff and clients</li>
+                                    <li>Regular maintenance and updates</li>
+                                    <li>Professional look and feel</li>
+                                </ul>
+                            </div>
+                            <div class="perks-item">
+                                <div class="perks-item-head">
+                                    <h6>Powerful System-wide Features</h6>
+                                </div>
+                                <ul class="yellow-checkmark-list">
+                                    <li>Clean coding for error-free system operations</li>
+                                    <li>Easy one-click updates and automatic updating</li>
+                                    <li>Regular maintenance for constant system uptime</li>
+                                    <li>Cross-device functionality for easier access</li>
+                                </ul>
+                            </div>
+                            <div class="perks-item">
+                                <div class="perks-item-head">
+                                    <h6>Effective Mobile Interface</h6>
+                                </div>
+                                <ul class="yellow-checkmark-list">
+                                    <li>Access from mobile devices is easy and fast</li>
+                                    <li>Important data is prioritized and presented visually on mobile</li>
+                                    <li>Allows for increased control over the system using other devices</li>
+                                    <li>System access on-the-go for constant operational effectiveness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="accent-link mar-t2" data-fancybox="" href="#quote-popup">Let's talk <img src="/images/icons/arrow-right-yellow.png" alt="arrow-right-yellow.png"></a>
+                    </div>
+                </section>
+
+                <section class="single-service-section eCom-section4">
+                    <div class="grid-2col">
+                        <div>
+                            <div class="text-block">
+                                <h5 class="font-light-blue">E-COMMERCE MADE EASY</h5>
+                                <h3 class="font-accent-dark">Give Your Clients the Power to Do More</h3>
+                                <p>
+                                    The solutions we create give you the chance to support payment from a vast range of sources, whether they are credit cards or online transfers,
+                                    or anything in between. Your customers are given the power over their payments, which makes you the go-to choice for e-commerce in your field.
+                                    Our well-structured invoicing and payment processing system lets you bring versatility to your customers.
+                                </p>
+                                <br />
+                                <p>
+                                    At Vestra Inet, your local software design company, our consultants will be happy to learn about your specific requirements and design solutions
+                                    that will both maximize your revenue and simplify your transaction processes. Book an appointment with us today to learn more.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="/images/services/eCommerce/logistics.jpg" alt="logistics.jpg" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-blog ab-no-margin">
+                    <div>
+                        <h2>Blog</h2>
+                        <p>
+                            Get the latest on custom design and development, internet marketing, search engine optimization (SEO), and the importance of custom software that will
+                            bring your business above the rest. As we demonstrate to you in our blog posts, content is an important part of your marketing strategy. So through
+                            these posts you’ll understand how different services we offer combine to create a powerful online presence.
+                        </p>
+                        <div class="blog-items">
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/4-undeniable-benefits-of-having-custom-software-for-your-business.jpg"
+                                            alt="4-undeniable-benefits-of-having-custom-software-for-your-business.jpg"
+                                            title="4-undeniable-benefits-of-having-custom-software-for-your-business"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/3-examples-of-successful-custom-software-for-businesses.jpg"
+                                            alt="3-examples-of-successful-custom-software-for-businesses.jpg"
+                                            title="3-examples-of-successful-custom-software-for-businesses"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>3 examples of successful custom software for businesses</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/3-digital-marketing-trends-for-right-now-617093.jpg"
+                                            alt="3-digital-marketing-trends-for-right-now-617093.jpg"
+                                            title="3-digital-marketing-trends-for-right-now"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-item">
+                                <a href="#" title="Blog title">
+                                    <span class="blog-item-img"
+                                        ><img
+                                            src="/images/blog/blogs/5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto-776311.jpg"
+                                            alt="5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto"
+                                            title="5-critical-reasons-to-use-a-top-tier-service-for-software-development-in-toronto"
+                                    /></span>
+                                    <div class="blog-item-txt">
+                                        <h4>4 Critical Qualities of Software Development in Toronto</h4>
+                                        <span class="blog-item-view">View Post / 07-07-2021</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="exp-link" href="/html/blog.html" title="View all blogs">View All <img src="/images/icons/arrow-right.png" alt="" /></a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer inner-block">
+                <div class="global-wrapper">
+                    <div class="ft-item">
+                        <img src="/images/misc/logo.png" alt="Vestra Inet" title="Vestra Inet" />
+                        <p class="ft-descr">
+                            With decades of experience in the industry, Vestra Inet is the leading custom web design and business solutions provider in the GTA. Our highly skilled
+                            team of professionals develop the ultimate custom business software, combining them with the best-in-class marketing solutions and incredible website
+                            design to craft the ultimate overall solution to launch your business into a new age of efficiency and success.
+                        </p>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Site Map</div>
+                        <ul>
+                            <li><a class="" href="/" title="Home">Home</a></li>
+                            <li><a class="" href="/html/about.html" title="About Us">About Us</a></li>
+                            <li><a class="" href="/html/services.html" title="Our Services">Our Services</a></li>
+                            <li>
+                                <a class="" href="/website-design-toronto.html" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="" href="/html/testimonials.html" title="Testimonials">Testimonials</a></li>
+                            <li><a class="" href="/html/blogs.html" title="Blog">Blog</a></li>
+                            <li><a class="" href="/html/employment.html" title="Employment">Employment</a></li>
+                            <li><a class="" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Services</div>
+                        <ul>
+                            <li><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                            <li><a href="/html/services/services-web-design.html" title="Web Design">Web Design</a></li>
+                            <li>
+                                <a href="/html/services/services-internet-marketing-promotion.html" title="Internet Marketing &amp; Promotion"
+                                    >Internet Marketing &amp; Promotion</a
+                                >
+                            </li>
+                            <li><a href="/html/services/services-online-ordering-eCommerce.html" title="E Commerce Solutions">E Commerce Solutions</a></li>
+                            <li><a href="/html/services/services-consulting-analysis.html" title="Consulting Analisis">Consulting Analysis</a></li>
+                            <li><a href="/html/services/services-video-photography.html" title="Video Design">Video And Photography</a></li>
+                            <li><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            <li><a href="/html/services/services-corporate-Identity.html" title="Corporate Identity">Corporate Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Contact Us</div>
+                        <ul>
+                            <li>100 Drumlin Cir.<br />Suite 201, Concord, ON<br />L4K 3E5</li>
+                            <li>
+                                <span class="ft-phone">Phone:<br />905.761.8078</span>
+                            </li>
+                        </ul>
+                        <div>Vestrainet, 2021 All rights Reserved</div>
+                        <div class="google-badges">
+                            <div>
+                                <a
+                                    href="https://www.google.ca/search?q=vestra+inet+review&amp;rlz=1C1CHBD_enCA768CA768&amp;oq=vestra+inet+review&amp;aqs=chrome..69i57j69i60l3j0.7429j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                    target="_blank"
+                                    ><img src="/images/icons/google_review.png" alt=""
+                                /></a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                    ><img src="/images/icons/facebook_icon.png" alt="facebook_icon.png"
+                                /></a>
+                                <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"><img src="/images/icons/twitter_icon.png" alt="twitter_icon.png" /></a>
+                                <a href="https://www.instagram.com/vestrainet/ " target="_blank" title="Instagram"
+                                    ><img src="/images/icons/instagram_icon.png" alt="instagram_icon.png"
+                                /></a>
+                                <a href="https://www.linkedin.com/company/vestra-inet/ " target="_blank" title="LinkedIn"
+                                    ><img src="/images/icons/linkedin_icon.png" alt="linkedin_icon.png"
+                                /></a>
+                                <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber " target="_blank" title="YouTube"
+                                    ><img src="/images/icons/youtube_icon.png" alt="youtube_icon.png"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Quote form popup -->
+        <div id="quote-popup">
+            <div class="quote-overlay"></div>
+            <div class="quote-popup-head">
+                <h5>Contact Us</h5>
+                <h3>Have a Project for Your Business in Mind?</h3>
+                <p>We're excited to learn more and share some ideas. You can provide a few details through the form below, reach us by phone at 905.761.8078</p>
+            </div>
+            <form data-action="Inquire">
+                <div class="grid-2col">
+                    <input type="text" name="name" placeholder="Name*" required />
+                    <input type="text" name="company" placeholder="Company (Optional)" />
+                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                    <input type="email" name="email" placeholder="Email*" required />
+                </div>
+
+                <textarea name="message"></textarea>
+
+                <p>Attach file (Optional)</p>
+                <div class="quote-file">
+                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                </div>
+
+                <div class="form-msg">Regular message</div>
+                <div class="form-msg error">Error message</div>
+                <div class="form-msg success">Success message</div>
+
+                <button class="btn-sml accent js-submit-inquire">Submit</button>
+
+                <p style="opacity: 0.7">* Indicates a required field</p>
+            </form>
+        </div>
+        <script src="/js/main.js" defer></script>
+    </body>
+</html>

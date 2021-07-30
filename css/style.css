@@ -3408,7 +3408,7 @@
     margin: 0 auto;
 }
 
-.mar-section4 .text-block .mar-i4{
+.mar-section4 .text-block .mar-i4 {
     display: none;
 }
 
@@ -3418,13 +3418,13 @@
     background-position: right;
     background-size: auto 100%;
 }
-.mar-section5 .mar-i5{
+.mar-section5 .mar-i5 {
     display: none;
 }
-.single-service-section.mar-section5{
+.single-service-section.mar-section5 {
     padding: 0;
 }
-.mar-section5 .text-block{
+.mar-section5 .text-block {
     background-color: #f3f6fb;
     padding: 30px;
 }
@@ -3479,6 +3479,39 @@
     margin: 0 50px;
     border-radius: 15px;
     box-shadow: 0 10px 20px -10px rgb(95, 124, 138);
+}
+
+/* [service - eCommerce] */
+.eCom-section1 > div:last-of-type {
+    width: 80%;
+    margin: 0 auto;
+}
+.eCom-section1-content {
+    max-width: 930px;
+}
+.eCom-section2 .txt-header{
+    max-width: 950px;
+}
+.eCom-section2 .grid-1fr-2fr {
+    width: 80%;
+    margin: 0 auto;
+    gap: 60px;
+}
+.eCom-section2 .grid-1fr-2fr .primary-button{
+    max-width: max-content;
+}
+.eCom-section3 > div{
+        width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.eCom-section3 .perks-item{
+    background-color: #fff;
+    color: #000;
+}
+.eCom-section3 .perks-item .perks-item-head{
+    background-color: #2f4b6819;
+    height: 100%;
 }
 
 /* [MEDIAS] */
@@ -3543,10 +3576,10 @@
     }
 
     /* [service - marketing] */
-    .tab-block{
+    .tab-block {
         flex-direction: column;
     }
-    .tab-block > img{
+    .tab-block > img {
         display: block;
         margin: 0 auto;
         width: unset;
@@ -3706,10 +3739,10 @@
     .mar-section1 > .grid-1fr-2fr {
         grid-template-columns: 1fr;
     }
-    .mar-section1 > .grid-1fr-2fr img{
+    .mar-section1 > .grid-1fr-2fr img {
         margin-bottom: 20px;
     }
-    .mar-section1 > .grid-1fr-2fr > div:first-child{
+    .mar-section1 > .grid-1fr-2fr > div:first-child {
         grid-row: 2;
     }
 }
@@ -3796,13 +3829,13 @@
     }
 
     /* [service - marketing] */
-    .mar-section5{
+    .mar-section5 {
         background-image: none;
     }
-    .mar-section5 .grid-2col{
+    .mar-section5 .grid-2col {
         display: block;
     }
-    .mar-section5 .mar-i5{
+    .mar-section5 .mar-i5 {
         display: block;
         margin: 0 auto;
         max-width: 100%;
@@ -3909,25 +3942,25 @@
     }
 
     /* [service - marketing] */
-    .mar-section4 .grid-2col{
+    .mar-section4 .grid-2col {
         grid-template-columns: 1fr;
     }
-    .mar-section4 .grid-2col > div:first-child{
+    .mar-section4 .grid-2col > div:first-child {
         display: none;
     }
-    .mar-section4 .grid-2col > div:last-child{
+    .mar-section4 .grid-2col > div:last-child {
         margin: 0 5%;
     }
-    .mar-section4 .grid-2col .mar-i4{
+    .mar-section4 .grid-2col .mar-i4 {
         display: block;
         margin: 0 auto;
         max-width: 100%;
         margin-bottom: 30px;
     }
-    .q-block{
+    .q-block {
         grid-template-columns: 1fr;
     }
-    .mar-section6 .primary-button{
+    .mar-section6 .primary-button {
         grid-column: unset;
     }
 }
@@ -4217,11 +4250,11 @@
 
     /* [service - marketing] */
     .service-marketing .text-block h5,
-    .service-marketing .txt-header h5{
+    .service-marketing .txt-header h5 {
         display: none;
     }
     .service-marketing .text-block h3,
-    .service-marketing .txt-header h2{
+    .service-marketing .txt-header h2 {
         font-size: 24px;
         line-height: 1.3;
     }
@@ -4540,7 +4573,7 @@
     }
 
     /* [service - marketing] */
-    .mar-section3 .marketing-points-item{
+    .mar-section3 .marketing-points-item {
         max-width: 200px;
     }
 }
@@ -4769,21 +4802,21 @@
         margin-right: 5%;
     }
     /* [service - marketing] */
-    .mar-section3 .marketing-points-item h6{
+    .mar-section3 .marketing-points-item h6 {
         font-size: 16px;
         font-weight: 600;
     }
-    .mar-section3 .marketing-points-item{
+    .mar-section3 .marketing-points-item {
         max-width: 150px;
         margin: 0 10px;
     }
     .mar-section3 .marketing-points-item p {
         display: none;
     }
-    .mar-section5 .text-block{
+    .mar-section5 .text-block {
         padding: 30px 0;
     }
-    .mar-section5 .text-block p:not(:first-of-type){
+    .mar-section5 .text-block p:not(:first-of-type) {
         display: none;
     }
 }
@@ -4795,13 +4828,13 @@
         height: 75px;
     }
 
-    .primary-button{
+    .primary-button {
         font-size: 14px;
     }
 }
 @media (max-width: 360px) {
     /* [service - marketing] */
-    .mar-section3 .marketing-points-item{
+    .mar-section3 .marketing-points-item {
         max-width: 130px;
     }
 }
