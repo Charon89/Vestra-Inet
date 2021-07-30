@@ -3374,6 +3374,9 @@
     width: 80%;
     max-width: unset;
 }
+.mar-section1 > .grid-1fr-2fr img {
+    max-width: 100%;
+}
 
 .marketing-points-list {
     display: flex;
@@ -3399,17 +3402,83 @@
     line-height: 28px;
     color: var(--accent-dark);
 }
-.mar-section3 .primary-button{
+.mar-section3 .primary-button {
     width: max-content;
     display: block;
     margin: 0 auto;
 }
 
-.mar-section5{
+.mar-section4 .text-block .mar-i4{
+    display: none;
+}
+
+.mar-section5 {
     background-image: url(/images/services/marketing/sect5.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto 100%;
+}
+.mar-section5 .mar-i5{
+    display: none;
+}
+.single-service-section.mar-section5{
+    padding: 0;
+}
+.mar-section5 .text-block{
+    background-color: #f3f6fb;
+    padding: 30px;
+}
+
+.q-block {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.mar-section6 .primary-button {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: max-content;
+    grid-column: 1/3;
+}
+
+.t-sidebar {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.tablink {
+    color: rgb(82, 82, 82);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    border: 0;
+    padding: 5px 0;
+    background: none;
+    white-space: pre-wrap;
+    max-width: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.tablink.active {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-dark);
+}
+
+.tab-block {
+    display: flex;
+    align-items: flex-start;
+}
+.tab-block > img {
+    display: block;
+    width: 100%;
+    /* max-width: 600px; */
+    object-fit: scale-down;
+    margin: 0 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -10px rgb(95, 124, 138);
 }
 
 /* [MEDIAS] */
@@ -3471,6 +3540,18 @@
     }
     .pr-custom-quote-block > div:last-of-type {
         padding: 40px;
+    }
+
+    /* [service - marketing] */
+    .tab-block{
+        flex-direction: column;
+    }
+    .tab-block > img{
+        display: block;
+        margin: 0 auto;
+        width: unset;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 1443px) {
@@ -3620,6 +3701,18 @@
         width: 90%;
     }
 }
+@media (max-width: 1260px) {
+    /* [service - marketing] */
+    .mar-section1 > .grid-1fr-2fr {
+        grid-template-columns: 1fr;
+    }
+    .mar-section1 > .grid-1fr-2fr img{
+        margin-bottom: 20px;
+    }
+    .mar-section1 > .grid-1fr-2fr > div:first-child{
+        grid-row: 2;
+    }
+}
 @media (max-width: 1235px) {
     /* [home - services transform] */
     .home-services {
@@ -3700,6 +3793,20 @@
     .s-web3 .grid-2col {
         grid-template-columns: 1fr;
         box-shadow: 0 0 25px -15px #000000;
+    }
+
+    /* [service - marketing] */
+    .mar-section5{
+        background-image: none;
+    }
+    .mar-section5 .grid-2col{
+        display: block;
+    }
+    .mar-section5 .mar-i5{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 1130px) {
@@ -3799,6 +3906,29 @@
     }
     .single-service-section .grid-2col .text-block {
         order: 1;
+    }
+
+    /* [service - marketing] */
+    .mar-section4 .grid-2col{
+        grid-template-columns: 1fr;
+    }
+    .mar-section4 .grid-2col > div:first-child{
+        display: none;
+    }
+    .mar-section4 .grid-2col > div:last-child{
+        margin: 0 5%;
+    }
+    .mar-section4 .grid-2col .mar-i4{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .q-block{
+        grid-template-columns: 1fr;
+    }
+    .mar-section6 .primary-button{
+        grid-column: unset;
     }
 }
 
@@ -4083,6 +4213,17 @@
     }
     .pr-custom-quote-block-2 h2 {
         font-size: 28px;
+    }
+
+    /* [service - marketing] */
+    .service-marketing .text-block h5,
+    .service-marketing .txt-header h5{
+        display: none;
+    }
+    .service-marketing .text-block h3,
+    .service-marketing .txt-header h2{
+        font-size: 24px;
+        line-height: 1.3;
     }
 }
 
@@ -4397,6 +4538,11 @@
     .s-web3 .grid-2col {
         margin: 0;
     }
+
+    /* [service - marketing] */
+    .mar-section3 .marketing-points-item{
+        max-width: 200px;
+    }
 }
 @media (max-width: 600px) {
     /* [about - we specialize] */
@@ -4622,6 +4768,24 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    /* [service - marketing] */
+    .mar-section3 .marketing-points-item h6{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .mar-section3 .marketing-points-item{
+        max-width: 150px;
+        margin: 0 10px;
+    }
+    .mar-section3 .marketing-points-item p {
+        display: none;
+    }
+    .mar-section5 .text-block{
+        padding: 30px 0;
+    }
+    .mar-section5 .text-block p:not(:first-of-type){
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
@@ -4629,5 +4793,15 @@
     .home-services-item-icon {
         width: 75px;
         height: 75px;
+    }
+
+    .primary-button{
+        font-size: 14px;
+    }
+}
+@media (max-width: 360px) {
+    /* [service - marketing] */
+    .mar-section3 .marketing-points-item{
+        max-width: 130px;
     }
 }

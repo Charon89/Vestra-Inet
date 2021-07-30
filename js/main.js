@@ -272,4 +272,23 @@ $(function () {
         $(this).closest('.job-item-hidden-content').slideUp(500);
         $this.closest('.job-item').find('.js-open-job').show();
     });
+
+    $('.tablink').on('click', function (e) {
+        openLink($(this), $(this).data('q-rel'));
+    });
+
+    // Marketing page - tabs
+    function openLink(obj, id) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName('tab-block');
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        $(obj).addClass("active")
+        document.getElementById(id).style.display = 'flex';
+    }
 });
