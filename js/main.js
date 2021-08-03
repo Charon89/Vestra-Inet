@@ -2,20 +2,6 @@ $(function () {
     // Home page
     $('.video-block').css({ paddingTop: $('.header').outerHeight() });
 
-    // $('.home-services-item').on('mouseenter', function () {
-    //     $('.home-services-item').removeClass('accent');
-    //     $(this).toggleClass('accent').css({ margin: '0 15px' });
-    // });
-    // $('.home-services-item').on('mouseleave', function () {
-    //     $(this).toggleClass('accent').css({ margin: '0' });
-
-    //     setTimeout(() => {
-    //         if (!$('.home-services-item').hasClass('accent')) {
-    //             $('.home-services-item').eq(1).addClass('accent');
-    //         }
-    //     }, 2000);
-    // });
-
     // Services page
     $('.services-item').on('mouseenter', function () {
         $('.services-item').removeClass('accent');
@@ -190,6 +176,46 @@ $(function () {
                 delay: 5000,
             },
         });
+    if ($('.corpSwiper').length)
+        var swiper = new Swiper('.corpSwiper', {
+            // slidesPerView: 4,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            speed: 1500,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    // About page go mobile section
+    if ($('.goMobile-swiper').length) {
+        var swiper = new Swiper('.goMobile-swiper', {
+            autoHeight: true,
+            loop: true,
+            speed: 1500,
+            spaceBetween: 100,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,
+            },
+            effect: 'slide',
+            fadeEffect: {
+                crossFade: true,
+            },
+        });
+        swiper.on('transitionStart', function (instance) {
+            $(instance.$el).find('.mobile-ph').css({right: "25%", opacity: 0});
+            $(instance.$el).find('.product-ph').css({ right: '5%', opacity: 0 });
+        });
+        swiper.on('transitionEnd', function (instance) {
+            $(instance.$el).find('.mobile-ph').css({ right: '35%', opacity: 1 });
+            $(instance.$el).find('.product-ph').css({ right: '13%', opacity: 1 });
+        });
+    }
     if ($('#pr-accordion').length)
         $('#pr-accordion').accordion({
             collapsible: true,
@@ -209,26 +235,18 @@ $(function () {
         }
     );
 
-    // About page go mobile section
-    if ($('.goMobile-swiper').length) {
-        var swiper = new Swiper('.goMobile-swiper', {
-            autoHeight: true,
-            loop: true,
-            speed: 1500,
-            spaceBetween: 100,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 5000,
-            },
-            effect: 'slide',
-            fadeEffect: {
-                crossFade: true,
-            },
+    if ($('.team-accord').length)
+        $('.option').click(function () {
+            $('.option').removeClass('active');
+            $(this).addClass('active');
         });
-    }
 
     // About page parallax effect
     if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1, bleed: 0 });
+
+    // Service - corporate identity page
+    if ($('.corp-section2').length)
+        $('.corp-section2').parallax({ imageSrc: '/images/services/corpIdentity/central-image-coroporate-identity-vestra-inet-toronto 1.jpg', speed: 0.1, bleed: 0 });
 
     // Our -services - 3d - parallax effect
     if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0.1 });
@@ -288,7 +306,7 @@ $(function () {
         for (i = 0; i < x.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(' active', '');
         }
-        $(obj).addClass("active")
+        $(obj).addClass('active');
         document.getElementById(id).style.display = 'flex';
     }
 });

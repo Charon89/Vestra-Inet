@@ -30,7 +30,7 @@
 }
 
 .txt-header {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto 50px;
     position: relative;
     text-align: center;
@@ -89,6 +89,25 @@
     width: 30px;
     height: 30px;
     background-image: url(/images/icons/checkmark-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.blue-checkmark-list {
+    list-style: none;
+}
+.blue-checkmark-list li {
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.blue-checkmark-list li::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/icons/checkmark-blue.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -375,7 +394,7 @@
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #172e4dc7;
+    background-color: #172e4dec;
     transition: 0.4s ease;
     overflow: hidden;
 }
@@ -1784,13 +1803,15 @@
     position: absolute;
     width: 40%;
     top: 10%;
-    right: 35%;
+    right: 25%;
+    transition: 0.5s ease;
 }
 .about-go-mobile .swiper-slide .product-ph {
     position: absolute;
     width: 40%;
     top: 30%;
     right: 10%;
+    transition: 0.5s ease;
 }
 
 .about-go-mobile-benefits {
@@ -2058,7 +2079,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .blog-item {
-    max-width: 300px;
+    /* max-width: 300px; */
     background: #fff;
     border-radius: 15px;
     margin: 1%;
@@ -2080,7 +2101,7 @@
 }
 .blog-item .blog-item-img {
     width: 100%;
-    max-height: 300px;
+    /* max-height: 300px; */
     transition: filter 0.5s;
 }
 .blog-item .blog-item-img img {
@@ -2476,6 +2497,7 @@
 .photo-video-custom-item > img {
     border-radius: 15px;
     margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .photo-video-custom-block-2 {
@@ -3260,6 +3282,9 @@
     color: #fff;
     text-align: left;
 }
+.s-service2 .s-service2-img {
+    display: none;
+}
 .s-service2 > .text-block {
     text-align: center;
 }
@@ -3271,6 +3296,9 @@
 .s-service2 .grid-1fr-2fr ul li {
     padding: 5px;
     font-weight: 300;
+}
+.s-service2 .grid-1fr-2fr > div:last-of-type img {
+    max-width: 100%;
 }
 .s-service3 .grid-2col {
     justify-items: center;
@@ -3307,12 +3335,17 @@
 .s-service5 {
     background-image: url(/images/services/software/stock-photo-factory-worker.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 .single-service-section.s-service5 {
     padding: 0;
 }
 .s-service5 .grid-2col {
     margin-bottom: 90px;
+}
+.s-service5 .text-block {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.878);
 }
 
 .s-service6 > div {
@@ -3362,6 +3395,11 @@
 .s-service7 .grid-1fr-2fr {
     max-width: unset;
     justify-items: center;
+    grid-template-columns: minmax(400px, 1fr) 2fr;
+    gap: 50px;
+}
+.s-service7 .grid-1fr-2fr > div:last-of-type img {
+    max-width: 100%;
 }
 
 /* [service - marketing] */
@@ -3489,7 +3527,7 @@
 .eCom-section1-content {
     max-width: 930px;
 }
-.eCom-section2 .txt-header{
+.eCom-section2 .txt-header {
     max-width: 950px;
 }
 .eCom-section2 .grid-1fr-2fr {
@@ -3497,21 +3535,390 @@
     margin: 0 auto;
     gap: 60px;
 }
-.eCom-section2 .grid-1fr-2fr .primary-button{
+.eCom-section2 .grid-1fr-2fr .primary-button {
     max-width: max-content;
 }
-.eCom-section3 > div{
-        width: 80%;
+.eCom-section3 > div {
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
-.eCom-section3 .perks-item{
+.eCom-section3 .perks-item {
     background-color: #fff;
     color: #000;
 }
-.eCom-section3 .perks-item .perks-item-head{
+.eCom-section3 .perks-item .perks-item-head {
     background-color: #2f4b6819;
     height: 100%;
+}
+
+/* [service - consulting] */
+.consult-section1 .yellow-checkmark-list li {
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+.consult-section1 .yellow-checkmark-list h6 {
+    text-transform: uppercase;
+}
+
+.consult-section2 .mf-grid {
+    gap: 35px;
+    margin-bottom: 0;
+}
+.consult-section3 {
+    padding: 0;
+}
+.consult-section3 .grid-2col {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0;
+    margin: 0 auto;
+}
+.consult-section3 .grid-2col > div > img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.consult-section3 .grid-2col > div:last-of-type {
+    padding: 50px;
+    max-width: 800px;
+}
+
+.consult-section4 {
+    background-image: url(/images/services/consulting/hand-vestra-business-card.png),
+        radial-gradient(circle at 50%, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, transparent 75%);
+    background-size: 50%;
+    /* min-height: 600px; */
+    background-repeat: no-repeat;
+    background-position: top 80% right 0;
+}
+
+.consult-section4 .grid-2fr-1fr {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.consult-section4 .blue-checkmark-list {
+    margin-top: 50px;
+    max-width: 600px;
+    font-weight: 500;
+}
+
+/* [service - corpIdentity] */
+.consult-section1 {
+    box-shadow: 0 60px 65px 0 rgb(0 0 0 / 40%);
+}
+.corp-section2 {
+    min-height: 700px;
+    /* background-image: url(/images/services/corpIdentity/central-image-coroporate-identity-vestra-inet-toronto\ 1.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+}
+.corp-section4.bg-corp-1 {
+    background-image: url(/images/services/corpIdentity/business-cards\ 1.png);
+    background-repeat: no-repeat;
+}
+.consult-section4.corp-section5 {
+    min-height: 500px;
+    background-image: url(/images/services/corpIdentity/img-ferrieer-business-cards\ 1.png);
+    background-size: 400px contain;
+}
+.consult-section4.corp-section5 .text-block {
+    max-width: 70%;
+    padding: 50px;
+    background-color: #fff;
+}
+.corpSwiper-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.corpSwiper {
+    /* width: 90%; */
+}
+.corpSwiper .swiper-wrapper {
+    margin: 0 50px;
+    align-items: center;
+}
+.corpSwiper .swiper-slide {
+    width: max-content;
+}
+.corpSwiper .swiper-slide img {
+    display: block;
+    /* max-width: 250px; */
+    max-width: 60%;
+    min-width: 100px;
+    margin: 0 auto;
+}
+.corpSwiper-wrapper .swiper-button-next {
+    right: -40px !important;
+}
+.corpSwiper-wrapper .swiper-button-prev {
+    left: -40px !important;
+}
+
+/* [Blogs] */
+.blogs-page > div {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.blog-wp {
+    width: auto;
+    /* max-width: 1110px;
+  _width: 1110px;
+  margin-bottom: 50px; */
+}
+
+.blog-wp-out {
+    /* display: flex;
+  flex-wrap: wrap; */
+    display: grid;
+    column-gap: 3vh;
+    row-gap: 4vh;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+.blog-wp-in {
+    position: relative;
+    z-index: 1;
+    /* padding-top: 40px; */
+}
+
+.blog-thumb {
+    /* width: 30%; */
+    /* padding: 45px 1.5% 0; */
+    background: #fff;
+    border-radius: 15px;
+    margin: 1%;
+    box-shadow: 0px 3px 15px 1px rgba(127, 164, 199, 0.1);
+    overflow: hidden;
+}
+.bt-txt {
+    padding: 20px;
+}
+.bt-txt h4 {
+    font-size: 20px;
+}
+.blog-thumb:hover img {
+    filter: sepia(100%);
+}
+
+.blog-thumb a:link,
+.blog-thumb a:visited {
+    display: block;
+    text-decoration: none;
+    color: #111111;
+}
+
+.blog-L h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 43px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    max-width: 1000px;
+    text-transform: none;
+}
+
+.blog-thumb span {
+    display: block;
+    cursor: pointer;
+}
+
+.blog-share {
+    padding-top: 5px;
+}
+
+.bth-view,
+.blog-L .blog-date,
+.blog-share a:link,
+.blog-share a:visited {
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    color: #666464;
+}
+
+/* .bth-img {
+  padding-top: 20px;
+} */
+
+.bth-img img {
+    width: 100%;
+    /* max-width: 90%; */
+    _width: 90%;
+    /* padding: 5%; */
+    /* border: 1px solid #ccc; */
+    transition: filter 0.5s;
+}
+
+.abs-B {
+    bottom: 0;
+}
+
+.bi-part {
+    font-size: 0;
+}
+
+.blog-L-abs {
+    width: 34.5%;
+    position: absolute;
+    left: 0;
+}
+
+.blog-R {
+    float: right;
+    width: 60%;
+}
+
+/* .blog-txt {
+  padding: 10px 15px 20px 0;
+} */
+
+.blog-txt .fancybox-media {
+    position: relative;
+    float: left;
+}
+
+.blog-main-txt {
+    padding-top: 20px;
+}
+
+.bl-img {
+    position: relative;
+    max-height: 450px;
+    max-width: 100%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.bl-img iframe {
+    max-width: 100%;
+}
+.blog-posted {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    font-family: Verdana;
+    font-size: 8pt;
+}
+
+.blog-posted span {
+    position: absolute;
+    top: -1px;
+    left: 80px;
+    width: 19px;
+    height: 11px;
+    background: url(../images/comment-arr.gif) no-repeat;
+}
+
+.blog-posted font {
+    color: #2f7aee;
+}
+.bcm-new {
+    position: relative;
+    display: none;
+}
+
+.bcm-new label {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    border-bottom: 1px solid #bebebe;
+}
+
+.bcm-new-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.bcm-new-btn a:link,
+.bcm-new-btn a:visited {
+    border: 1px solid #23356a;
+    color: #23356a;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+.bcm-new-btn a:hover {
+    background-color: #b2b2b2;
+    color: #fff;
+}
+
+.bcm-input {
+    padding-bottom: 10px;
+}
+
+.bcm-input span {
+    display: block;
+    float: left;
+    width: 70px;
+    padding-top: 3px;
+    text-align: right;
+    padding-right: 10px;
+    font-family: Verdana;
+    font-size: 8pt;
+}
+
+.bcm-input div {
+    float: left;
+}
+
+.bcm-input input {
+    width: 400px;
+    font-family: Verdana;
+    font-size: 9pt;
+    padding: 2px;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+}
+
+.bcm-input textarea {
+    width: 400px;
+    height: 100px;
+    font-family: Verdana;
+    font-size: 9pt;
+    padding: 2px;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    resize: none;
+}
+
+.bcm-btn {
+    padding-left: 80px;
+}
+
+.bcm-none {
+    color: #e83731;
+}
+
+.blog-comments label {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+
+.bcmM {
+    width: 87%;
+    padding: 10px 20px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 150%;
 }
 
 /* [MEDIAS] */
@@ -3538,6 +3945,11 @@
     /* [project-inner] */
     .pr-inner-grid {
         width: 95%;
+    }
+
+    /* [service - software] */
+    .s-service3 .grid-2col {
+        gap: 30px;
     }
 }
 @media (max-width: 1570px) {
@@ -3703,6 +4115,16 @@
     .pr-custom-quote-block-2 > div:last-of-type img {
         top: -50px;
     }
+
+    /* [service - consulting] */
+    .about-business-solutions.consult-section3 .grid-2col {
+        width: 100%;
+    }
+
+    /* [service - software] */
+    .s-service3 h2 {
+        font-size: 35px;
+    }
 }
 @media (max-width: 1380px) {
     /* [about - soft development] */
@@ -3732,6 +4154,19 @@
     /* [service-photo-video] */
     .single-service-section .grid-2col {
         width: 90%;
+    }
+
+    /* [service - software] */
+    .s-service5 {
+        background-size: cover;
+        background-position: center center;
+    }
+    .s-service5 .grid-2col {
+        display: block;
+        margin: 0 auto;
+    }
+    .service-soft .yellow-checkmark-list li {
+        height: unset;
     }
 }
 @media (max-width: 1260px) {
@@ -3791,6 +4226,29 @@
     }
     .pr-inner-grid.order-rev > div:first-of-type {
         order: 0;
+    }
+
+    /* [service - software] */
+    .s-service2 .grid-1fr-2fr {
+        display: block;
+    }
+    .s-service2 .grid-1fr-2fr > div:last-of-type img {
+        display: none;
+    }
+    .s-service2 .s-service2-img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .s-service7 .grid-1fr-2fr {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .s-service7 .grid-1fr-2fr > div:last-of-type {
+        grid-row: 1;
+    }
+    .s-service7 .grid-1fr-2fr > div:first-of-type {
+        grid-row: 2;
     }
 }
 @media (max-width: 1220px) {
@@ -4307,6 +4765,14 @@
 }
 
 @media (max-width: 680px) {
+    .accent-link,
+    .exp-link {
+        font-size: 13px;
+    }
+    .accent-link:hover,
+    .exp-link:hover {
+        letter-spacing: 0.2em;
+    }
     .common-header {
         min-height: 115px;
     }
@@ -4465,6 +4931,7 @@
         gap: 5px;
         margin-bottom: 5px;
     }
+
     .about-soft-development-grid-item.sdgi-effect {
         width: 100%;
         height: 100px;
@@ -4575,6 +5042,30 @@
     /* [service - marketing] */
     .mar-section3 .marketing-points-item {
         max-width: 200px;
+    }
+
+    /* [service - software] */
+    .s-service1 .text-block,
+    .s-service6 .text-block.text-center {
+        text-align: left !important;
+    }
+    .s-service2 .grid-1fr-2fr {
+        padding: 0;
+    }
+    .s-service4 .s-type-grid-custom {
+        display: block;
+        margin: 0 auto;
+    }
+    .s-service4 .s-type-grid-custom .exp-link {
+        margin-top: 30px;
+    }
+    .service-soft .text-block h5 {
+        display: none;
+    }
+    .service-soft .text-block h3,
+    .s-service3 h2,
+    .s-service3 h2 {
+        font-size: 25px;
     }
 }
 @media (max-width: 600px) {
@@ -4786,6 +5277,11 @@
     }
 
     /* [service - web] */
+    .s-web-section-inner .s-web-s1.text-block,
+    .mar-section3 .text-block.text-center {
+        text-align: left !important;
+    }
+
     .bg-web-1 {
         background-image: none;
     }
@@ -4818,6 +5314,21 @@
     }
     .mar-section5 .text-block p:not(:first-of-type) {
         display: none;
+    }
+
+    /* [service - software] */
+    .s-service3 {
+        display: none;
+    }
+    .s-service5 .grid-2col {
+        width: 100%;
+    }
+    .s-service6 > div {
+        width: 95%;
+    }
+    .s-service6 .perks-item .perks-item-head h6 {
+        font-size: 16px;
+        line-height: unset;
     }
 }
 

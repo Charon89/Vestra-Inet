@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="/js/libs/jQuery_3.6.0.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="/css/libs/fancyBox_3.5.7.css" />
+        <script src="/js/libs/fancyBox_3.5.7.js"></script>
+
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="/css/libs/aos.css" />
+        <script src="/js/libs/aos.js" defer></script>
+
+        <!-- parallax js -->
+        <script src="/js/libs/parallax.js" defer></script>
+
+        <!-- Select2 -->
+        <link rel="stylesheet" href="/css/libs/select2.css" />
+        <script src="/js/libs/select2.js"></script>
+
+        <title>Vestrainet - Blog</title>
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div class="root">
+            <header class="header">
+                <a class="logo" href="/" title="Vestra Inet">
+                    <img src="/images/misc/logo.png" alt="Vestra Inet" />
+                </a>
+                <div class="header-block">
+                    <div id="responsive-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="responsive-menu-container">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="/html/about.html" title="About Us">About Us</a></li>
+                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+                        <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <ul class="responsive-sub-menu">
+                                <h6>Software Development</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>Website DeVeLOPMENT</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-web-design.html" title="Website Design">Website Design</a></li>
+                            </ul>
+                            <ul class="responsive-sub-menu">
+                                <h6>OTHER</h6>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-photo-video.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+
+                        <div class="call-us-today">
+                            <h6>CALL US TODAY!</h6>
+                            <a href="tel:9057618078">905.761.8078</a>
+                        </div>
+                    </ul>
+
+                    <ul class="top-menu">
+                        <li class="t-menu-item"><a class="t-link" href="/" title="Home">Home</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/about.html" title="About Us">About Us</a></li>
+                        <li class="t-menu-item active">
+                            <a class="t-link" href="/html/services/services.html" title="Our Services"
+                                >Our Services <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <ul>
+                                        <li><a href="/html/services/services-software-development.html">Software development</a></li>
+                                        <li><a href="/html/services/services-web-design.html">Web design</a></li>
+                                        <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
+                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li class="active"><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
+                                        <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
+                                        <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item">
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio"
+                                >Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
+                            /></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-section">
+                                    <p>Software Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-type-of-system.html">TYpe of System</a></li>
+                                        <li><a href="/html/portfolio/portfolio-projects-list.html">Project List</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Website Development</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-web-design.html">Website design</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-menu-section">
+                                    <p>Other</p>
+                                    <ul>
+                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                        <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/employment.html" title="Employment">Employment</a></li>
+                        <li class="t-menu-item"><a class="t-link" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        <li class="t-menu-item"><a class="inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main class="p-top70 service-eCom">
+                <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-4.jpg)">
+                    <div class="common-header-inner">
+                        <div class="bread-links">
+                            <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp;
+                            <a href="/html/blogs.html">Blogs</a>
+                        </div>
+                        <h1>Blogs</h1>
+                    </div>
+                </div>
+
+                <div class="blog-page">
+                    <div class="blog-wp blog-wp-in ma">
+                        <div class="blog-L inner-block global-wrapper">
+                            <h1 class="common-heading">Does Your Business Need a Software Development Company?</h1>
+                            <div class="blog-date">23-02-2021</div>
+                            <div class="blog-share">
+                                <a href="#">Share this post</a>
+                                <a
+                                    href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.vestrainet.com%2Fdoes-your-business-need-a-software-development-company.html&amp;t=Does+Your+Business+Need+a+Software+Development+Company%3F&amp;src=sp"
+                                    class="bsh-hidden"
+                                    target="_blank"
+                                >
+                                    / Facebook</a
+                                >
+                                <a
+                                    href="https://twitter.com/share?original_referer=https%3A%2F%2Fwww.vestrainet.com%2Fdoes-your-business-need-a-software-development-company.html&amp;related=&amp;source=tweetbutton&amp;text=Does+Your+Business+Need+a+Software+Development+Company%3F&amp;url=https%3A%2F%2Fwww.vestrainet.com%2Fdoes-your-business-need-a-software-development-company.html"
+                                    class="bsh-hidden"
+                                    target="_blank"
+                                >
+                                    / Twitter</a
+                                >
+                            </div>
+                            <div class="blog-txt">
+                                <img
+                                    class="bl-img"
+                                    src="/images/blog/blog_img/does-your-business-need-a-software-development-company-173409.jpg"
+                                    alt="Does Your Business Need a Software Development Company?"
+                                    title="Does Your Business Need a Software Development Company?"
+                                />
+                                <p>
+                                    <span style="font-size: 16px"
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                            >In your recent business performance evaluation, you’ve noticed that client traffic and income are performing well. Additionally, your
+                                            future projects look like everything is moving forward and will remain so as your customer base increases. However, you've encountered
+                                            some prospective customers and businesses who find your services limited due to a lack of forward-thinking technological features. You
+                                            might have already asked yourself if you need the services of a </span
+                                        ><a href="https://vestrainet.com/" style="text-decoration-line: none" target="_blank"
+                                            ><span style="background-color: transparent; color: rgb(17, 85, 204); font-family: arial">software development company</span></a
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial">.</span></span
+                                    >
+                                </p>
+
+                                <p>
+                                    <span style="font-size: 16px"
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                            >Every high-tier software development company understands that software upgrades require a certain budget. Computer knowledge and
+                                            experience takes time to implement and understand fully. You also have come to the realization that your current recording, monitoring,
+                                            customer notification, and order tracking systems have become dated. As time goes on you’ve noticed that many competitors are adopting
+                                            digital interfaces and software programmes to ease administrative burdens through automation and pipelined operations.</span
+                                        ></span
+                                    >
+                                </p>
+
+                                <p>&nbsp;</p>
+
+                                <p>
+                                    <span style="font-size: 26px"
+                                        ><strong
+                                            ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                                >Thankfully, a high-tier software development company, such as Vestra Inet, can quickly solve your problems.
+                                            </span></strong
+                                        ></span
+                                    >
+                                </p>
+
+                                <p>&nbsp;</p>
+
+                                <p>
+                                    <span style="font-size: 16px"
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                            >We've encountered many businesses who find it challenging to accommodate new technologies into their current operations. High-quality
+                                            software developers prioritize adjusting programmes to suit your daily operations. In doing so, you reduce hiccups and adjustments while
+                                            maximizing your overall productivity.</span
+                                        ></span
+                                    >
+                                </p>
+
+                                <p>
+                                    <span style="font-size: 16px"
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                            >When assessing whether your business needs updating and next-generation software, always think of your client's convenience. Most
+                                            B2B-oriented businesses will want to use software programmes because of their client base's technical knowledge.&nbsp;</span
+                                        ></span
+                                    >
+                                </p>
+
+                                <p>
+                                    <span style="font-size: 16px"
+                                        ><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial"
+                                            >Considering this, if you need a dependable software developer for all your needs, you can always count on us at Vestra Inet. With
+                                            decades of experience and a great roster of Canadian companies satisfied with our services, we're confident in providing you with the
+                                            best project results. No matter your budget we can build you a custom solution. Contact us today to learn more about our full range of
+                                            services we can provide to fit your business needs!</span
+                                        ></span
+                                    >
+                                </p>
+
+                                <p>&nbsp;</p>
+                            </div>
+                            <br class="clear" />
+                        </div>
+
+                        <section class="inner-block bg-light">
+                            <div class="blog-comments global-wrapper">
+                                <label>User Comments</label>
+                                <!-- <div class="bcm-none">No comments yet...</div> -->
+                                <div class="bcmM">Good to know you guys specialize in custom software </div>
+                                <div class="blog-posted">Posted by: <font>Ricardo J.</font> | October 24, 2019, 4:07 pm<span></span></div>
+                                <div class="bcmM">Informative read - calendar software is really effective!</div>
+                                <div class="blog-posted">Posted by: <font>KATIE </font> | OCTOBER 10, 2019, 11:23 AM<span></span></div>
+                                <!-- <div class="bcm-new-btn">
+                                    <a href="#" title="Post a Comment">Post a Comment</a>
+                                </div> -->
+                                <div class="bcm-new">
+                                    <div id="msg"></div>
+                                    <label>Post a comment</label>
+                                    <div class="bcm-warning">*** Your email address will not be published.</div>
+                                    <form action="/does-your-business-need-a-software-development-company.html#msg" method="post">
+                                        <div class="bcm-input">
+                                            <span>Name:</span>
+                                            <div><input type="text" name="b_name" value="" /></div>
+                                            <br class="clear" />
+                                        </div>
+                                        <div class="bcm-input">
+                                            <span>E-mail:</span>
+                                            <div><input type="text" name="b_email" value="" /></div>
+                                            <br class="clear" />
+                                        </div>
+                                        <div class="bcm-input">
+                                            <span>Comment:</span>
+                                            <div><textarea name="b_comment"></textarea></div>
+                                            <br class="clear" />
+                                        </div>
+                                        <div class="bcm-btn"><input type="image" src="/images/form-btn.jpg" /></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                        <br class="clear" />
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer inner-block">
+                <div class="global-wrapper">
+                    <div class="ft-item">
+                        <img src="/images/misc/logo.png" alt="Vestra Inet" title="Vestra Inet" />
+                        <p class="ft-descr">
+                            With decades of experience in the industry, Vestra Inet is the leading custom web design and business solutions provider in the GTA. Our highly skilled
+                            team of professionals develop the ultimate custom business software, combining them with the best-in-class marketing solutions and incredible website
+                            design to craft the ultimate overall solution to launch your business into a new age of efficiency and success.
+                        </p>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Site Map</div>
+                        <ul>
+                            <li><a class="" href="/" title="Home">Home</a></li>
+                            <li><a class="" href="/html/about.html" title="About Us">About Us</a></li>
+                            <li><a class="" href="/html/services.html" title="Our Services">Our Services</a></li>
+                            <li>
+                                <a class="" href="/website-design-toronto.html" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="" href="/html/testimonials.html" title="Testimonials">Testimonials</a></li>
+                            <li><a class="" href="/html/blogs.html" title="Blog">Blog</a></li>
+                            <li><a class="" href="/html/employment.html" title="Employment">Employment</a></li>
+                            <li><a class="" href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Services</div>
+                        <ul>
+                            <li><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                            <li><a href="/html/services/services-web-design.html" title="Web Design">Web Design</a></li>
+                            <li>
+                                <a href="/html/services/services-internet-marketing-promotion.html" title="Internet Marketing &amp; Promotion"
+                                    >Internet Marketing &amp; Promotion</a
+                                >
+                            </li>
+                            <li><a href="/html/services/services-online-ordering-eCommerce.html" title="E Commerce Solutions">E Commerce Solutions</a></li>
+                            <li><a href="/html/services/services-consulting-analysis.html" title="Consulting Analisis">Consulting Analysis</a></li>
+                            <li><a href="/html/services/services-video-photography.html" title="Video Design">Video And Photography</a></li>
+                            <li><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                            <li><a href="/html/services/services-corporate-Identity.html" title="Corporate Identity">Corporate Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-item">
+                        <div class="ft-label">Contact Us</div>
+                        <ul>
+                            <li>100 Drumlin Cir.<br />Suite 201, Concord, ON<br />L4K 3E5</li>
+                            <li>
+                                <span class="ft-phone">Phone:<br />905.761.8078</span>
+                            </li>
+                        </ul>
+                        <div>Vestrainet, 2021 All rights Reserved</div>
+                        <div class="google-badges">
+                            <div>
+                                <a
+                                    href="https://www.google.ca/search?q=vestra+inet+review&amp;rlz=1C1CHBD_enCA768CA768&amp;oq=vestra+inet+review&amp;aqs=chrome..69i57j69i60l3j0.7429j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x882b2e6bbebc6cf3:0xe553ec2144d0abbc,1,,,"
+                                    target="_blank"
+                                    ><img src="/images/icons/google_review.png" alt=""
+                                /></a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.facebook.com/vestrainet/" target="_blank" title="Facebook"
+                                    ><img src="/images/icons/facebook_icon.png" alt="facebook_icon.png"
+                                /></a>
+                                <a href="https://twitter.com/Vestra_Inet" target="_blank" title="Twitter"><img src="/images/icons/twitter_icon.png" alt="twitter_icon.png" /></a>
+                                <a href="https://www.instagram.com/vestrainet/ " target="_blank" title="Instagram"
+                                    ><img src="/images/icons/instagram_icon.png" alt="instagram_icon.png"
+                                /></a>
+                                <a href="https://www.linkedin.com/company/vestra-inet/ " target="_blank" title="LinkedIn"
+                                    ><img src="/images/icons/linkedin_icon.png" alt="linkedin_icon.png"
+                                /></a>
+                                <a href="https://www.youtube.com/channel/UCZ5IGUp5nWPp71Nydn1JF5w?view_as=subscriber " target="_blank" title="YouTube"
+                                    ><img src="/images/icons/youtube_icon.png" alt="youtube_icon.png"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Quote form popup -->
+        <div id="quote-popup">
+            <div class="quote-overlay"></div>
+            <div class="quote-popup-head">
+                <h5>Contact Us</h5>
+                <h3>Have a Project for Your Business in Mind?</h3>
+                <p>We're excited to learn more and share some ideas. You can provide a few details through the form below, reach us by phone at 905.761.8078</p>
+            </div>
+            <form data-action="Inquire">
+                <div class="grid-2col">
+                    <input type="text" name="name" placeholder="Name*" required />
+                    <input type="text" name="company" placeholder="Company (Optional)" />
+                    <input type="tel" name="phone" placeholder="Phone number*" required />
+                    <input type="email" name="email" placeholder="Email*" required />
+                </div>
+
+                <textarea name="message"></textarea>
+
+                <p>Attach file (Optional)</p>
+                <div class="quote-file">
+                    <label for="quote-upload" class="quote-upload"> BROWSE </label>
+                    <input id="quote-upload" class="quote-upload-in" name="file" type="file" />
+                </div>
+
+                <div class="form-msg">Regular message</div>
+                <div class="form-msg error">Error message</div>
+                <div class="form-msg success">Success message</div>
+
+                <button class="btn-sml accent js-submit-inquire">Submit</button>
+
+                <p style="opacity: 0.7">* Indicates a required field</p>
+            </form>
+        </div>
+        <script src="/js/main.js" defer></script>
+    </body>
+</html>
