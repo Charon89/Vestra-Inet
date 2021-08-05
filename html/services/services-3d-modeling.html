@@ -44,6 +44,7 @@
                     <img src="/images/misc/logo.png" alt="Vestra Inet" />
                 </a>
                 <div class="header-block">
+                    <a class="inquire-trigger mobile-inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a>
                     <div id="responsive-menu-trigger">
                         <span></span>
                         <span></span>
@@ -52,8 +53,22 @@
                     <ul class="responsive-menu-container">
                         <li><a href="/" title="Home">Home</a></li>
                         <li><a href="/html/about.html" title="About Us">About Us</a></li>
-                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+
                         <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Services</a>
+                            <ul class="responsive-sub-menu">
+                                <li class="responsive-sub-menu-item">
+                                    <a href="/html/services/services-software-development.html" title="Software development">Software development</a>
+                                </li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-web-design.html" title="Web design">Web design</a></li>
+                                <li class="responsive-sub-menu-item">
+                                    <a href="/html/services/services-internet-marketing-promotion.html" title="Internet marketing & promotion">Internet marketing & promotion</a>
+                                </li>
+                                <li class="responsive-sub-menu-item active"><a href="/html/services/services.html" title="Other services">Other</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="responsive-sub-menu-trigger">
                             <a href="#" title="Portfolio">Portfolio</a>
                             <ul class="responsive-sub-menu">
                                 <h6>Software Development</h6>
@@ -70,6 +85,7 @@
                                 <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
                             </ul>
                         </li>
+
                         <li><a href="/html/employment.html" title="Employment">Employment</a></li>
                         <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
 
@@ -92,19 +108,18 @@
                                         <li><a href="/html/services/services-software-development.html">Software development</a></li>
                                         <li><a href="/html/services/services-web-design.html">Web design</a></li>
                                         <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
-                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li class="active"><a href="/html/services/services.html">Other</a></li>
+                                        <!-- <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
                                         <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
                                         <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
                                         <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
-                                        <li class="active"><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li> -->
                                     </ul>
                                 </div>
                             </div>
                         </li>
                         <li class="t-menu-item">
-                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio"
-                                >Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
-                            /></a>
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio">Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="" /></a>
                             <div class="sub-menu">
                                 <div class="sub-menu-section">
                                     <p>Software Development</p>
@@ -124,7 +139,7 @@
                                 <div class="sub-menu-section">
                                     <p>Other</p>
                                     <ul>
-                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                      <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
                                         <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
                                     </ul>
                                 </div>
@@ -137,7 +152,7 @@
                 </div>
             </header>
 
-            <main class="p-top70 our-services">
+            <main class="p-top70 our-services service-3d">
                 <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-2.png)">
                     <div class="common-header-inner">
                         <div class="bread-links">
@@ -147,7 +162,7 @@
                         <h1>3d modeling</h1>
                     </div>
 
-                    <div class="toggler-block">
+                    <!-- <div class="toggler-block">
                         <select class="services-select" name="service-selected">
                             <option value="Software development" data-url="/html/services/services-software-development.html">Software development</option>
                             <option value="Web design" data-url="/html/services/services-web-design.html">Web design</option>
@@ -158,10 +173,10 @@
                             <option value="Video & Photograph" data-url="/html/services/services-video-photography.html">Video & Photograph</option>
                             <option value="3D Modeling" data-url="/html/services/services-3d-modeling.html" selected>3D Modeling</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
 
-                <section class="single-service-section">
+                <section class="single-service-section d3-section1">
                     <div class="grid-2col">
                         <div class="text-block">
                             <h5>3D Modeling</h5>
@@ -182,7 +197,7 @@
                     </div>
                 </section>
 
-                <section class="single-service-section experience-bg">
+                <section class="single-service-section experience-bg d3-section2">
                     <div class="experience-bg-overlay"></div>
                     <div class="d3-custom-section">
                         <h1>Give Your Clients the Complete Experience</h1>
@@ -205,11 +220,10 @@
                     </div>
                 </section>
 
-                <section class="single-service-section">
+                <section class="single-service-section d3-section3">
                     <div class="grid-2col">
                         <div class="img-block anim-3d">
                             <img class="anim-static" src="/images/services/3d/t3.gif" alt="t3.gif" />
-                            
                         </div>
 
                         <div class="text-block">
@@ -234,7 +248,7 @@
                     </div>
                 </section>
 
-                <section class="single-service-section bg-light ss-no-padding">
+                <section class="single-service-section bg-light ss-no-padding d3-section4">
                     <div class="grid-2col">
                         <div class="text-block">
                             <h5>HIGH-END BUSINESS CARD DESIGN AND PRINTING</h5>
@@ -257,7 +271,7 @@
                     </div>
                 </section>
 
-                <section class="single-service-section">
+                <section class="single-service-section d3-section5">
                     <div class="grid-2col">
                         <div class="img-block">
                             <img src="/images/services/modeling-pic-2 1.png" alt="modeling-pic-2 1.png" />

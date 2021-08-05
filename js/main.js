@@ -16,6 +16,16 @@ $(function () {
         }, 2000);
     });
 
+    if ($('.scroll-down-link').length)
+        $('.scroll-down-link').on('click', function () {
+            $('html, body').animate(
+                {
+                    scrollTop: $('.h-services').offset().top,
+                },
+                800
+            );
+        });
+
     // Google review hover handlers
     $('.google-review-item').hover(
         function (e) {
@@ -92,6 +102,14 @@ $(function () {
             if ($('#port-filter').offset().top == $(window).scrollTop() + $('.header').height()) {
                 $('#port-filter').addClass('is-pinned');
             } else $('#port-filter').removeClass('is-pinned');
+        
+        if ($(window).scrollTop() > 50) {
+            $('.common-header.st').addClass('sticked');
+            $('.common-header.st .common-header-inner').slideUp(300);
+        } else {
+            $('.common-header.st').removeClass('sticked');
+            $('.common-header.st .common-header-inner').slideDown(300);
+        }
     });
 
     let $menu = $('.responsive-menu-container');
@@ -103,8 +121,14 @@ $(function () {
 
     $('.responsive-sub-menu-trigger').on('click', function (e) {
         // e.preventDefault();
-        $(this).toggleClass('active-sub-menu');
-        $(this).find('.responsive-sub-menu').slideToggle(300);
+        console.log(e.target);
+        if ($(this).hasClass('active-sub-menu')) {
+            $(this).removeClass('active-sub-menu').find('.responsive-sub-menu').slideUp(300);
+            return;
+        }
+        $('.responsive-sub-menu-trigger').removeClass('active-sub-menu').find('.responsive-sub-menu').slideUp(300);
+
+        $(this).addClass('active-sub-menu').find('.responsive-sub-menu').slideToggle(300);
     });
 
     $(window).resize(function () {
@@ -190,6 +214,26 @@ $(function () {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                840: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                940: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
         });
     // About page go mobile section
     if ($('.goMobile-swiper').length) {
@@ -208,7 +252,7 @@ $(function () {
             },
         });
         swiper.on('transitionStart', function (instance) {
-            $(instance.$el).find('.mobile-ph').css({right: "25%", opacity: 0});
+            $(instance.$el).find('.mobile-ph').css({ right: '25%', opacity: 0 });
             $(instance.$el).find('.product-ph').css({ right: '5%', opacity: 0 });
         });
         swiper.on('transitionEnd', function (instance) {
@@ -242,24 +286,34 @@ $(function () {
         });
 
     // About page parallax effect
-    if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1, bleed: 0 });
-
-    // Service - corporate identity page
-    if ($('.corp-section2').length)
-        $('.corp-section2').parallax({ imageSrc: '/images/services/corpIdentity/central-image-coroporate-identity-vestra-inet-toronto 1.jpg', speed: 0.1, bleed: 0 });
-
+    // if ($('.about-we-specialize').length) $('.about-we-specialize').parallax({ imageSrc: '/images/about-page/Commercial-industrial-webdesign.png', speed: 0.1, bleed: 0 });
     // Our -services - 3d - parallax effect
-    if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0.1 });
+    // if ($('.single-service-section.experience-bg').length) $('.single-service-section.experience-bg').parallax({ imageSrc: '/images/services/Group 217.png', speed: 0.1 });
+    // Service - corporate identity page
+    // if ($('.corp-section2').length)
+    //     $('.corp-section2').parallax({ imageSrc: '/images/services/corpIdentity/central-image-coroporate-identity-vestra-inet-toronto 1.jpg', speed: 0.1, bleed: 0 });
 
     // Services select block
-    if ($('.services-select').length)
-        $('.services-select').select2({
-            placeholder: 'Select an option',
+    if ($('.services-select.type-of-system-select').length)
+        $('.services-select.type-of-system-select').select2({
+            placeholder: 'Type of system',
+            // allowClear: true,
             minimumResultsForSearch: -1,
         });
+    if ($('.services-select.pr-list-select').length)
+        $('.services-select.pr-list-select').select2({
+            placeholder: 'Project list',
+            // allowClear: true,
+            minimumResultsForSearch: -1,
+        });
+    // if ($('.services-select').length)
+    //     $('.services-select').select2({
+    //         placeholder: 'Select an option',
+    //         minimumResultsForSearch: -1,
+    //     });
     $('.services-select').on('select2:select', function (e) {
         var data = e.params.data;
-        // console.log($(data.element).data("url"));
+        console.log($(data.element).data('url'));
         window.location = $(data.element).data('url');
     });
 

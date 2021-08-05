@@ -43,11 +43,12 @@
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="root">
-            <header class="header">
+           <header class="header">
                 <a class="logo" href="/" title="Vestra Inet">
                     <img src="/images/misc/logo.png" alt="Vestra Inet" />
                 </a>
                 <div class="header-block">
+                    <a class="inquire-trigger mobile-inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a>
                     <div id="responsive-menu-trigger">
                         <span></span>
                         <span></span>
@@ -56,8 +57,19 @@
                     <ul class="responsive-menu-container">
                         <li><a href="/" title="Home">Home</a></li>
                         <li><a href="/html/about.html" title="About Us">About Us</a></li>
-                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+
                         <li class="responsive-sub-menu-trigger active">
+                            <a href="#" title="Portfolio">Services</a>
+                            <ul class="responsive-sub-menu">
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-web-design.html" title="Web design">Web design</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-internet-marketing-promotion.html" title="Internet marketing & promotion">Internet marketing & promotion</a></li>
+                                <li class="responsive-sub-menu-item active"><a href="/html/services/services.html" title="Other services">Other</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="responsive-sub-menu-trigger">
                             <a href="#" title="Portfolio">Portfolio</a>
                             <ul class="responsive-sub-menu">
                                 <h6>Software Development</h6>
@@ -74,6 +86,7 @@
                                 <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
                             </ul>
                         </li>
+
                         <li><a href="/html/employment.html" title="Employment">Employment</a></li>
                         <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
 
@@ -96,19 +109,18 @@
                                         <li><a href="/html/services/services-software-development.html">Software development</a></li>
                                         <li><a href="/html/services/services-web-design.html">Web design</a></li>
                                         <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
-                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li class="active" ><a href="/html/services/services.html">Other</a></li>
+                                        <!-- <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
                                         <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
-                                        <li class="active"><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
+                                        <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
                                         <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
-                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li> -->
                                     </ul>
                                 </div>
                             </div>
                         </li>
                         <li class="t-menu-item">
-                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio"
-                                >Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="dropdown-arrows.png"
-                            /></a>
+                            <a class="sub-menu-trigger t-link" href="#" title="Portfolio">Portfolio <img class="mar-l1" src="/images/icons/dropdown-arrows.png" alt="" /></a>
                             <div class="sub-menu">
                                 <div class="sub-menu-section">
                                     <p>Software Development</p>
@@ -128,7 +140,7 @@
                                 <div class="sub-menu-section">
                                     <p>Other</p>
                                     <ul>
-                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                       <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
                                         <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
                                     </ul>
                                 </div>
@@ -151,7 +163,7 @@
                         <h1>CORPORATE IDENTITY</h1>
                     </div>
 
-                    <div class="toggler-block">
+                    <!-- <div class="toggler-block">
                         <select class="services-select" name="service-selected">
                             <option value="Software development" data-url="/html/services/services-software-development.html">Software development</option>
                             <option value="Web design" data-url="/html/services/services-web-design.html">Web design</option>
@@ -162,7 +174,7 @@
                             <option value="Video & Photograph" data-url="/html/services/services-video-photography.html">Video & Photograph</option>
                             <option value="3D Modeling" data-url="/html/services/services-3d-modeling.html">3D Modeling</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
 
                 <section class="single-service-section consult-section1">
@@ -261,7 +273,7 @@
                                 Your business is more than a machine for sales. It is a dynamic personality that can be truly fascinating. Our corporate identity services bring out
                                 the best in your company and put it in the form of multiple channels that allow you to present yourself to the public in the most awesome way!
                             </p>
-
+                            <img class="corp-section5-img" src="/images/services/corpIdentity/img-ferrieer-business-cards 1.png" alt="img-ferrieer-business-cards 1.png">
                             <a href="/html/portfolio/portfolio-photo-video.html" class="primary-button accent gallery mar-t2" title="View portfolio">View portfolio</a>
                         </div>
                         <div></div>

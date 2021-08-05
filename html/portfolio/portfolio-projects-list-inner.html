@@ -36,6 +36,10 @@
         <link rel="stylesheet" href="/css/libs/swiperJs_7.6.5.css" />
         <script src="/js/libs/swiperJs_7.6.5.js"></script>
 
+         <!-- Select2 -->
+        <link rel="stylesheet" href="/css/libs/select2.css" />
+        <script src="/js/libs/select2.js"></script>
+
         <title>Vestrainet - Projects List</title>
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
@@ -45,6 +49,7 @@
                     <img src="/images/misc/logo.png" alt="Vestra Inet" />
                 </a>
                 <div class="header-block">
+                    <a class="inquire-trigger mobile-inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a>
                     <div id="responsive-menu-trigger">
                         <span></span>
                         <span></span>
@@ -53,13 +58,24 @@
                     <ul class="responsive-menu-container">
                         <li><a href="/" title="Home">Home</a></li>
                         <li><a href="/html/about.html" title="About Us">About Us</a></li>
-                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+
+                        <li class="responsive-sub-menu-trigger">
+                            <a href="#" title="Portfolio">Services</a>
+                            <ul class="responsive-sub-menu">
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-web-design.html" title="Web design">Web design</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-internet-marketing-promotion.html" title="Internet marketing & promotion">Internet marketing & promotion</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services.html" title="Other services">Other</a></li>
+                            </ul>
+
+                        </li>
+
                         <li class="responsive-sub-menu-trigger active">
                             <a href="#" title="Portfolio">Portfolio</a>
                             <ul class="responsive-sub-menu">
                                 <h6>Software Development</h6>
-                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
-                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
+                                <li class="responsive-sub-menu-item "><a href="/html/portfolio/portfolio-type-of-system.html" title="Type of System">Type of System</a></li>
+                                <li class="responsive-sub-menu-item active"><a href="/html/portfolio/portfolio-projects-list.html" title="Project List">Project List</a></li>
                             </ul>
                             <ul class="responsive-sub-menu">
                                 <h6>Website DeVeLOPMENT</h6>
@@ -71,6 +87,7 @@
                                 <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
                             </ul>
                         </li>
+
                         <li><a href="/html/employment.html" title="Employment">Employment</a></li>
                         <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
 
@@ -93,11 +110,12 @@
                                         <li><a href="/html/services/services-software-development.html">Software development</a></li>
                                         <li><a href="/html/services/services-web-design.html">Web design</a></li>
                                         <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
-                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li><a href="/html/services/services.html">Other</a></li>
+                                        <!-- <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
                                         <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
                                         <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
                                         <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
-                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -137,7 +155,7 @@
             </header>
 
             <main class="p-top70">
-                <div class="common-header" style="background-image: url(/images/misc/breadcrumbs-bg-3.png)">
+                <div class="common-header st" style="background-image: url(/images/misc/breadcrumbs-bg-3.png)">
                     <div class="common-header-inner">
                         <div class="bread-links">
                             <a href="/">WWW.VESTRAINET.COM</a> &nbsp;&gt;&nbsp; <a href="/html/portfolio/portfolio-projects-list.html">SOFTWARE DEVELOPMENT</a> &nbsp;&gt;&nbsp;
@@ -146,6 +164,50 @@
                         <h1>SOFTWARE DEVELOPMENT</h1>
                         <p>Lock 8</p>
                     </div>
+                </div>
+
+                  <div class="toggler-block portfolio-toggler-block">
+                    <select class="services-select type-of-system-select " name="type_of_system">
+                        <option data-url="/html/portfolio/portfolio-type-of-system.html"></option>
+                        <option value="Production Management" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Production Management</option>
+                        <option value="Custom ERP" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Custom ERP</option>
+                        <option value="Online Ordering System" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Online Ordering System</option>
+                        <option value="Product Configurator" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Online Ordering System</option>
+                        <option value="Custom ERP" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Product Configurator</option>
+                        <option value="Inventory Management System" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Inventory Management System</option>
+                        <option value="Calendars and Appointment Management" data-url="/html/portfolio/portfolio-type-of-system-inner.html">
+                            Calendars and Appointment Management
+                        </option>
+                        <option value="Rental Software" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Rental Software</option>
+                        <option value="Forecasting and Analysis Software" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Forecasting and Analysis Software</option>
+                        <option value="Price Calculator" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Price Calculator</option>
+                        <option value="Internal System Integration" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Internal System Integration</option>
+                        <option value="Automated Mailing System" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Automated Mailing System</option>
+                        <option value="PDF Generator" data-url="/html/portfolio/portfolio-type-of-system-inner.html">PDF Generator</option>
+                        <option value="Compatibility Advisor" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Compatibility Advisor</option>
+                        <option value="Database Synchronization" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Database Synchronization</option>
+                        <option value="Electronics Control Systems" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Electronics Control Systems</option>
+                        <option value="Database Conversions" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Database Conversions</option>
+                        <option value="Search Filters" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Search Filters</option>
+                        <option value="QR Codes" data-url="/html/portfolio/portfolio-type-of-system-inner.html">QR Codes</option>
+                        <option value="Performance Tracking and Reporting Systems" data-url="/html/portfolio/portfolio-type-of-system-inner.html">
+                            Performance Tracking and Reporting Systems
+                        </option>
+                        <option value="Online Catalogue" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Online Catalogue</option>
+                        <option value="User Accounts and Logins" data-url="/html/portfolio/portfolio-type-of-system-inner.html">User Accounts and Logins</option>
+                        <option value="Ecommerce System" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Ecommerce System</option>
+                        <option value="Electronic Data Interchange" data-url="/html/portfolio/portfolio-type-of-system-inner.html">Electronic Data Interchange</option>
+                    </select>
+                    <select class="services-select pr-list-select active" name="project_list">
+                        <option></option>
+                        <option value="Lock 8" data-url="/html/portfolio/portfolio-projects-list-inner.html" selected>Lock 8</option>
+                        <option value="Carlsberg Group Canada" data-url="/html/portfolio/portfolio-projects-list-inner.html">Carlsberg Group Canada</option>
+                        <option value="Madani Rings" data-url="/html/portfolio/portfolio-projects-list-inner.html">Madani Rings</option>
+                        <option value="MAD Elevator" data-url="/html/portfolio/portfolio-projects-list-inner.html">MAD Elevator</option>
+                        <option value="Door Maker" data-url="/html/portfolio/portfolio-projects-list-inner.html">Door Maker</option>
+                        <option value="Corporate Signs" data-url="/html/portfolio/portfolio-projects-list-inner.html">Corporate Signs</option>
+                        <option value="MacGregors" data-url="/html/portfolio/portfolio-projects-list-inner.html">MacGregors</option>
+                    </select>
                 </div>
 
                 <section class="pr-inner-logo">

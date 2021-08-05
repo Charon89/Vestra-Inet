@@ -46,11 +46,12 @@
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="root">
-            <header class="header">
+           <header class="header">
                 <a class="logo" href="/" title="Vestra Inet">
                     <img src="/images/misc/logo.png" alt="Vestra Inet" />
                 </a>
                 <div class="header-block">
+                    <a class="inquire-trigger mobile-inquire-trigger" data-fancybox href="#quote-popup" title="Inquire" data-options='{"touch" : false}'>Inquire</a>
                     <div id="responsive-menu-trigger">
                         <span></span>
                         <span></span>
@@ -59,7 +60,18 @@
                     <ul class="responsive-menu-container">
                         <li><a href="/" title="Home">Home</a></li>
                         <li class="active"><a href="/html/about.html" title="About Us">About Us</a></li>
-                        <li><a href="/html/services/services.html" title="Our Services">Our Services</a></li>
+
+                        <li class="responsive-sub-menu-trigger">
+                            <a href="#" title="Portfolio">Services</a>
+                            <ul class="responsive-sub-menu">
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-software-development.html" title="Software development">Software development</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-web-design.html" title="Web design">Web design</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services-internet-marketing-promotion.html" title="Internet marketing & promotion">Internet marketing & promotion</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/services/services.html" title="Other services">Other</a></li>
+                            </ul>
+
+                        </li>
+
                         <li class="responsive-sub-menu-trigger">
                             <a href="#" title="Portfolio">Portfolio</a>
                             <ul class="responsive-sub-menu">
@@ -73,10 +85,11 @@
                             </ul>
                             <ul class="responsive-sub-menu">
                                 <h6>OTHER</h6>
-                                <li class="responsive-sub-menu-item"><a href="/html/services/services-video-photography.html" title="Photo & Video">Photo & Video</a></li>
-                                <li class="responsive-sub-menu-item"><a href="/html/services/services-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-photo-video.html" title="Photo & Video">Photo & Video</a></li>
+                                <li class="responsive-sub-menu-item"><a href="/html/portfolio/portfolio-3d-modeling.html" title="3D Modeling">3D Modeling</a></li>
                             </ul>
                         </li>
+
                         <li><a href="/html/employment.html" title="Employment">Employment</a></li>
                         <li><a href="/html/contact-us.html" title="Contact Us">Contact Us</a></li>
 
@@ -99,11 +112,12 @@
                                         <li><a href="/html/services/services-software-development.html">Software development</a></li>
                                         <li><a href="/html/services/services-web-design.html">Web design</a></li>
                                         <li><a href="/html/services/services-internet-marketing-promotion.html">Internet Marketing & Promotion</a></li>
-                                        <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
+                                        <li><a href="/html/services/services.html">Other</a></li>
+                                        <!-- <li><a href="/html/services/services-online-ordering-eCommerce.html">Online Ordering & E Commerce </a></li>
                                         <li><a href="/html/services/services-consulting-analysis.html">Consulting Analysis </a></li>
                                         <li><a href="/html/services/services-corporate-Identity.html">Corporate Identity </a></li>
                                         <li><a href="/html/services/services-video-photography.html">Video & Photography</a></li>
-                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -129,8 +143,8 @@
                                 <div class="sub-menu-section">
                                     <p>Other</p>
                                     <ul>
-                                        <li><a href="/html/services/services-video-photography.html">Photo & Video</a></li>
-                                        <li><a href="/html/services/services-3d-modeling.html">3D Modeling</a></li>
+                                        <li><a href="/html/portfolio/portfolio-photo-video.html">Photo & Video</a></li>
+                                        <li><a href="/html/portfolio/portfolio-3d-modeling.html">3D Modeling</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -165,93 +179,6 @@
                     </p>
                     <a class="mar-tb2 flex j-c" href="#">Learn more</a>
                 </section>
-
-                <!-- <section class="about-meet-the-team">
-                    <div class="accordion">
-                        <ul>
-                            <li class="active">
-                                <span class="accordion-title">OUR TEAM</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>OUR TEAM</h2>
-                                        <p>
-                                            STRIKING THE BALANCE BETWEEN PASSION AND PROFESSIONALISM If there is one thing we all know about the Internet, it is that it isn’t
-                                            linear. Our team is as diverse as it gets in Toronto. We don’t just have web developers; we have everything in between, from consultants
-                                            to technical support gurus. The team at Vestra is selected from a vast variety of skill sets, and work together to bring you solutions
-                                            that will blow your mind. Read on for a look at how our web development team composition works for you.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="accordion-title">CONSULTANTS</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>CONSULTANTS</h2>
-                                        <p>
-                                            YOUR GUIDES TO VESTRA INET One of our consultants will meet with you in person to get familiar with your company and discuss what we can
-                                            do for you. You will get an overview of our capabilities and how we can tailor our services of custom website design in Toronto
-                                            specifically for your company. You will also get an understanding of how Vestra Inet can increase your online presence, attract more
-                                            clientele, as well as facilitate your business operations and transactions with our customized content management system software.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="accordion-title">DESIGNERS</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>DESIGNERS</h2>
-                                        <p>
-                                            CRAFTING BEAUTIFUL SITES, ONE PAGE AT A TIME Once one of our consultants has met with you, we move onto the design phase. Working
-                                            alongside you to build a functional design that meets all your criteria, being an extension of your company’s brand. Our designers
-                                            tailor your website, right down to the small details. We work with you at every step to give you the website you want for your company.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="accordion-title">PROGRAMMERS & DEVELOPERS</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>PROGRAMMERS & DEVELOPERS</h2>
-                                        <p>
-                                            THE ENGINEERS OF THE DIGITAL AGE. We’ll get your design in motion. Our skilled web developers program responsive, eye-catching websites
-                                            that bring our designs to life. With scrolling images, dynamic web elements, and mobile friendly pages, your website will be an
-                                            enjoyable experience for all visiting clients.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="accordion-title">DATABASE DEVELOPERS</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>DATABASE DEVELOPERS</h2>
-                                        <p>
-                                            BOOSTING YOUR OPERATIONAL EFFICIENCY Beyond design we implement content management systems, ecommerce stores, and more… If you dream it,
-                                            we can build it. Your website is an integral part of your business. We’ll make sure it functions exactly as you envision it. Our
-                                            developers program websites that cater specifically to your company’s needs.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="accordion-title">SEO SPECIALISTS</span>
-                                <div>
-                                    <a href="#">
-                                        <h2>SEO SPECIALISTS</h2>
-                                        <p>
-                                            INCREASING YOUR ONLINE EXPOSURE EVERY DAY Internet marketing and promotion is integral to growing a business. We can help potential
-                                            clients find you by implementing SEO strategies that are up to date with all Google standards. Our SEO specialists will help you
-                                            increase your search engine visibility, and put your website ahead of the competition.
-                                        </p>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section> -->
 
                 <section class="team-accord about-meet-the-team">
                     <div class="options">
